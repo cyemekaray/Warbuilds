@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/general.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/ingame.css" />
+    <link rel="stylesheet" href="../../css/modal.css" />
+    <link rel="stylesheet" href="../../fonts/Fremont-BoldFontKit/stylesheet.css" />
+    <title>Warbuilds In-Game Home Page</title>
+    <script src="../../lib/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="../../lib/jquery.dataTables.min.js" type="text/javascript"></script>
+    <style>
+      .dataTables_length {
+        display: none;
+      }
+      body {
+        background-image: url('../../img/ingametestbg5.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .UpperTitle {
+        text-align: center;
+        padding: 5px 0;
+        font-weight: bold;
+        color: #224499;
+        border-radius: 5px;
+      }
+      .UpperTitle img {
+        left: 5px;
+      }
+
+      div.outerbox {
+        border: 2px solid rgb(255, 255, 255);
+        opacity: 0.8;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+        margin: 0px;
+      }
+
+      div.buildbox {
+        padding-top: 7px;
+        padding-right: 0px;
+        padding-bottom: 9px;
+        padding-left: 0px;
+        padding-top: 0px;
+        overflow: auto;
+        height: 290px;
+        width: 100%;
+        display: block;
+        margin: 0px;
+      }
+
+      .textbox::-webkit-scrollbar,
+      .buildbox::-webkit-scrollbar {
+        display: none;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      table.buildordertable {
+        border-collapse: collapse;
+        font-size: 12px;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+      }
+
+      table.buildordertable th,
+      table.buildordertable td {
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 10px;
+        padding-top: 3px;
+        color: black;
+        margin: 0px;
+      }
+
+      table.buildordertable th {
+        background-color: #171717;
+        color: #edd00f;
+      }
+
+      table.buildordertable tr.highlighted {
+        background-color: white;
+      }
+
+      .app-header {
+        background-image: url('../../img/lockedinheaderbg.png') !important;
+      }
+
+      .containerAboveTable {
+        padding-top: 3px;
+        padding-bottom: 8px;
+        display: flex;
+        justify-content: center;
+      }
+
+      img.align-self {
+        align-self: center;
+      }
+
+      .fontbuttons {
+        border-radius: 4px;
+        border: 2px gold;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        font-size: 15px;
+        width: 2em;
+        height: 2em;
+      }
+
+      .fontbuttons:hover {
+        background-color: gold; /* Green */
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .backButton {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body class="in-game">
+    <!-- -------------------------------- Header ------------------------------- -->
+
+    <header class="app-header">
+      <img src="../../img/header_icon.png" />
+      <h1>Warbuilds</h1>
+      <h1 style="margin: auto;">Show/Hide:&nbsp;<span id="showandhide">F12</span></h1>
+      <div class="window-controls-group">
+        <button class="icon window-control support">
+          <svg>
+            <use xlink:href="/img/header_icons.svg#window-control_support" />
+          </svg>
+          <div class="tooltip">
+            <a target="_blank" href="https://discord.gg/krmTkP">Join our Discord</a><br />
+            <a target="_blank" href="http://www.clanat.org">Visit our Website</a> <br />
+            <a target="_blank" href="https://www.clanat.org/forum/warbuilds-bugs-feedback">Bug Reports + Feedback</a>
+            <hr />
+            <h3>Social Media (Not Yet Activated)</h3>
+            <div class="socialIcons">
+              <a target="_blank" href="https://twitter.com/theoverwolf">
+                <img src="../../img/twitter.svg" />
+              </a>
+              <a target="_blank" href="https://www.facebook.com/Overwolf/">
+                <img src="../../img/facebook.svg" />
+              </a>
+              <a target="_blank" href="https://www.reddit.com/r/Overwolf/">
+                <img src="../../img/reddit.png" />
+              </a>
+            </div>
+          </div>
+        </button>
+        <a class="icon window-control" href="overwolf://settings/hotkeys">
+          <svg>
+            <use xlink:href="/img/header_icons.svg#window-control_settings" />
+          </svg>
+        </a>
+        <button class="icon window-control" id="minimizeButton">
+          <svg>
+            <use xlink:href="/img/header_icons.svg#window-control_minimize" />
+          </svg>
+        </button>
+        <button class="icon window-control window-control-close" id="closeButton">
+          <svg>
+            <use xlink:href="/img/header_icons.svg#window-control_close" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- --------------------------------- Main -------------------------------- -->
+
+    <main id="main">
+      <div style="display:flex; align-items:center">
+        <div class="UpperTitle" style="width:60px">
+          <img class="backButton" src="../../img/backarrow.png" id="BackToDetailedViewButton" />
+        </div>
+        <div class="UpperTitle" style="flex:1">
+          <h3><b id="buildName"></b></h3>
+        </div>
+      </div>
+      <hr />
+      <div id="backgroundColor" style="border-radius: 4px;" class="outerbox">
+        <div class="containerAboveTable">
+          <div style="flex-grow: 1; align-self: center; justify-content: flex-start">
+            <center>
+              <img class="align-self" style="vertical-align: middle" src="../../img/EtcIcons/woodicon.png" />
+              <font color="black" size="3">&nbsp;=&nbsp;<b id="woodCount"></b></font>
+            </center>
+          </div>
+
+          <div style="flex-grow: 1; align-self: center; justify-content: center">
+            <center>
+              <b>Timer:&nbsp;</b><span id="currentTime">0:00</span>&nbsp;<br /><b>Start/Pause:</b>
+              <span id="startpauseHotkey">F9</span>&nbsp;<br /><b>Reset:</b>&nbsp;<span id="resetHotkey">F9</span>
+            </center>
+          </div>
+
+          <div style="flex-grow: 1; align-self: center; justify-content: flex-end">
+            <center>
+              <input type="button" class="fontbuttons" value="+" onclick="increaseFontSize('scroller', 1)" />&nbsp;
+              <input type="button" class="fontbuttons" value="-" onclick="increaseFontSize('scroller', -1)" />
+            </center>
+          </div>
+        </div>
+        <div id="scrollerdiv" style="padding-top: 10px;" class="buildbox">
+          <table id="scroller" class="buildordertable">
+            <thead>
+              <tr>
+                <th width="32%">Cue</th>
+                <th width="1%">Time</th>
+                <th width="67%">Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <audio id="myAudio">
+        <source src="/sounds/BuildUpdateNoise.mp3" type="audio/mpeg" />
+      </audio>
+    </main>
+
+    <!-- -------------------------------- Modal -------------------------------- -->
+    <div id="exitMinimizeModal" class="modal">
+      <div class="modal-content">
+        <h3>Exit the app?</h3>
+        <p>
+          Exiting the app will close all the app windows and terminate the app process.<br />
+          <br />
+          Are you sure?
+        </p>
+        <span class="buttonBar">
+          <button id="minimize" class="modalButton">
+            Minimize
+          </button>
+          <button id="exit" class="modalButton">
+            Exit
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <script src="../../lib/require.js"></script>
+    <script>
+      require(['locked-in-controller', './BuildDetailedView.js', './BuildByName.js'], function(
+        LockedInController,
+        BuildDetailedView,
+        buildbyname
+      ) {
+        console.log(`[INIT] in-game module loaded`)
+        document.getElementById('BackToDetailedViewButton').onclick = function() {
+          overwolf.windows.obtainDeclaredWindow('in_game', function(newwindow) {
+            console.log(newwindow)
+            overwolf.windows.restore('in_game')
+            overwolf.windows.close('BuildLockedIn')
+          })
+        }
+
+        var build = buildbyname[overwolf.windows.getMainWindow().currentBuild]
+        $('tbody').html(
+          build.BuildTable.map(
+            row => `
+          <tr>
+          <td>${row[0]}</td>
+          <td>${row[1]}</td>
+          <td>${row[2]}</td>
+          </tr>
+          `
+          ).join('')
+        )
+        $('#buildName')
+          .html(build.Name)
+          .css('color', build.racecolor)
+          .css('darkcolor', build.racedarkcolor)
+        $('#woodCount').html(build.WoodWorkerCount)
+        $('#backgroundColor').css('background-color', build.racecolor)
+        $('#tabledarkheaderColor').css('background-color', build.racedarkcolor)
+        new LockedInController().run()
+
+        let elapsed = 0
+        let isRunning = false
+        let intervalID
+
+        function prettyTime(numseconds) {
+          var minutes = Math.floor(numseconds / 60)
+          var seconds = numseconds - minutes * 60
+          if (seconds < 10) {
+            seconds = '0' + seconds
+          }
+          return `${minutes}:${seconds}`
+        }
+        overwolf.settings.registerHotKey('start_pause', function(result) {
+          if (!isRunning) {
+            intervalID = setInterval(() => {
+              elapsed++
+              $('#currentTime').html(prettyTime(elapsed))
+              calcSelectedRow()
+            }, 1000)
+          } else {
+            clearInterval(intervalID)
+          }
+          isRunning = !isRunning
+        })
+
+        document.getElementById('scrollerdiv').scrollBy({
+          top: 10,
+        })
+
+        function calcSelectedRow() {
+          var beep = document.getElementById('myAudio')
+
+          for (let index = 0; index < build.BuildTable.length; index++) {
+            const element = build.BuildTable[index]
+            if (element[1] == prettyTime(elapsed)) {
+              $('tbody tr')[index].className = 'highlighted'
+
+              var rowheight = document.getElementById('scroller').rows
+              var rowbump = rowheight[index].offsetHeight
+              beep.play()
+
+              document.getElementById('scrollerdiv').scrollBy({
+                top: rowbump,
+                behaviour: 'smooth',
+              })
+              if (index > 0) {
+                $('tbody tr')[index - 1].className = ''
+              }
+            }
+          }
+        }
+
+        overwolf.settings.registerHotKey('reset', function(result) {
+          elapsed = 0
+          $('#currentTime').html(prettyTime(elapsed))
+          ;[...$('tbody tr')].forEach(el => (el.className = ''))
+
+          document.getElementById('scrollerdiv').scrollTo({
+            top: 10,
+          })
+        })
+
+        var hidden = false
+        overwolf.settings.registerHotKey('showhidelockedin', function(result) {
+          if (!hidden) {
+            overwolf.windows.hide('BuildLockedIn')
+            hidden = true
+          } else {
+            overwolf.windows.restore('BuildLockedIn')
+            hidden = false
+          }
+        })
+
+        overwolf.settings.getHotKey('showhidelockedin', function(result1) {
+          $('#showandhide').html(result1.hotkey)
+          console.log(result1.hotkey)
+        })
+
+        overwolf.settings.getHotKey('start_pause', function(result2) {
+          $('#startpauseHotkey').html(result2.hotkey)
+          console.log(result2.hotkey)
+        })
+
+        overwolf.settings.getHotKey('reset', function(result3) {
+          $('#resetHotkey').html(result3.hotkey)
+          console.log(result3.hotkey)
+        })
+      })
+    </script>
+
+    <script>
+      function increaseFontSize(id, increaseFactor) {
+        txt = document.getElementById(id)
+        style = window.getComputedStyle(txt, null).getPropertyValue('font-size')
+        currentSize = parseFloat(style)
+        txt.style.fontSize = currentSize + increaseFactor + 'px'
+      }
+    </script>
+
+    <script src="http://content.overwolf.com/libs/ads/latest/owads.min.js" async onload="onOwAdReady()"></script>
+    <script>
+      function onOwAdReady() {
+        const owAd = new OwAd(document.getElementById('ad'))
+        function onWindowStateChanged(state) {
+          if (state && state.window_name === 'in_game') {
+            // when state changes to minimized, call removeAd()
+            if (state.window_state === 'minimized') {
+              owAd.removeAd()
+            }
+            // when state changes from minimized to normal, call refreshAd()
+            else if (state.window_previous_state === 'minimized' && state.window_state === 'normal') {
+              owAd.refreshAd()
+            }
+          }
+        }
+
+        overwolf.windows.onStateChanged.removeListener(onWindowStateChanged)
+        overwolf.windows.onStateChanged.addListener(onWindowStateChanged)
+      }
+    </script>
+  </body>
+</html>

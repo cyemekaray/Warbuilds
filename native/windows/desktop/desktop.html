@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/general.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/desktop.css" />
+    <link rel="stylesheet" href="../../css/modal.css" />
+    <title>Clan AT's Warbuilds</title>
+  </head>
+  <body class="desktop">
+    <!-- -------------------------------- Header ------------------------------- -->
+
+    <header class="app-header">
+      <img src="../../img/header_icon.png" />
+      <h1>Clan AT's Warbuilds | Desktop Window</h1>
+      <div class="window-controls-group">
+        <button class="icon window-control support">
+          <svg>
+            <use xlink:href="/img/header_icons.svg#window-control_support" />
+          </svg>
+          <div class="tooltip">
+            <a target="_blank" href="https://discord.gg/krmTkP">Join our Discord</a><br />
+            <a target="_blank" href="http://www.clanat.org/">Visit our Website</a><br />
+            <a target="_blank" href="https://www.clanat.org/forum/warbuilds-bugs-feedback">Bug Reports + Feedback</a>
+            <hr />
+            <h3>Social Media (Not Yet Activated)</h3>
+            <div class="socialIcons">
+              <a target="_blank" href="https://twitter.com/theoverwolf">
+                <img src="../../img/twitter.svg" />
+              </a>
+              <a target="_blank" href="https://www.facebook.com/Overwolf/">
+                <img src="../../img/facebook.svg" />
+              </a>
+              <a target="_blank" href="https://www.reddit.com/r/Overwolf/">
+                <img src="../../img/reddit.png" />
+              </a>
+            </div>
+          </div>
+        </button>
+        <a class="icon window-control" href="overwolf://settings/hotkeys">
+          <svg>
+            <use xlink:href="/img/header_icons.svg#window-control_settings" />
+          </svg>
+        </a>
+        <button class="icon window-control" id="minimizeButton">
+          <svg>
+            <use xlink:href="/img/header_icons.svg#window-control_minimize" />
+          </svg>
+        </button>
+        <button class="icon window-control window-control-close" id="closeButton">
+          <svg>
+            <use xlink:href="/img/header_icons.svg#window-control_close" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- --------------------------------- Main -------------------------------- -->
+    <main>
+      <div class="desktopTop">
+        <br />
+        <br />
+        <br />
+        <img
+          src="/img/WarbuildsDesktopBannerLogo.png"
+          align="left"
+          style="display:block; margin-top:-20px; margin-left:10px;"
+        />
+        <div id="version"></div>
+      </div>
+      <div class="desktopBottom">
+        <!-- Launch Warcraft III! -->
+        <div id="left">
+          <h1>
+            <p><b>Start WC3 and Warbuilds will automatically appear in-game!</b></p>
+            <p>
+              Choose your favorite build from the list in-game. Your build order will stay on screen during your game,
+              giving you timers and alerts to help you stay on the path.
+            </p>
+            <p>Builds are created by top players and vetted by our review team to guarantee the best quality. GLHF!</p>
+          </h1>
+        </div>
+        <!-- tutorial video -->
+        <div id="right">
+          <div style="text-align: center">
+            <div style="display: inline-block">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/vdxaOTm7R10"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- -------------------------------- Modal -------------------------------- -->
+    <div id="exitMinimizeModal" class="modal">
+      <div class="modal-content">
+        <h3>Exit the app?</h3>
+        <p>
+          Exiting the app will close all the app windows and terminate the app process.<br />
+          <br />
+          Are you sure?
+        </p>
+        <span class="buttonBar">
+          <button id="minimize" class="modalButton">
+            Minimize
+          </button>
+          <button id="exit" class="modalButton">
+            Exit
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <script src="../../lib/require.js"></script>
+    <script>
+      require(['desktop-controller'], function(DesktopController) {
+        console.log(`[INIT] desktop module loaded`)
+        const desktopCntroller = new DesktopController()
+        desktopCntroller.run()
+      }, function(error) {
+        console.log(`[INIT] failed to load desktop module ${error}`)
+      })
+    </script>
+    <script src="http://content.overwolf.com/libs/ads/latest/owads.min.js" async onload="onOwAdReady()"></script>
+    <script>
+      function onOwAdReady() {
+        const owAd = new OwAd(document.getElementById('ad'))
+        function onWindowStateChanged(state) {
+          if (state && state.window_name === 'desktop') {
+            // when state changes to minimized, call removeAd()
+            if (state.window_state === 'minimized') {
+              owAd.removeAd()
+            }
+            // when state changes from minimized to normal, call refreshAd()
+            else if (state.window_previous_state === 'minimized' && state.window_state === 'normal') {
+              owAd.refreshAd()
+            }
+          }
+        }
+
+        overwolf.windows.onStateChanged.removeListener(onWindowStateChanged)
+        overwolf.windows.onStateChanged.addListener(onWindowStateChanged)
+      }
+    </script>
+  </body>
+</html>

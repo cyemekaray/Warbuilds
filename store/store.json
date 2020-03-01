@@ -1,0 +1,7 @@
+{
+  "category_description": "for games",
+  //Currently only one category per app is possible.
+  //Possible values: "for games", "chat", "entertainment", "social", "utilities", "voip"
+  "tags": ["WC3", "WCIII", "Advisor", "Coach", "Macro"],
+  "title": "Warbuilds"
+}
