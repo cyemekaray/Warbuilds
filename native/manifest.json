@@ -3,7 +3,7 @@
   "type": "WebApp",
   "meta": {
     "name": "Warbuilds",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "minimum-overwolf-version": "0.120.0",
     "author": "Clan AT",
     "icon": "IconMouseOver.png",
@@ -46,7 +46,7 @@
       "showhidelockedin": {
         "title": "Show/Hide Locked In Window",
         "action-type": "custom",
-        "default": "F12"
+        "default": "F7"
       }
     },
     "game_events": [21638],
