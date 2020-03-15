@@ -135,9 +135,6 @@
       }
     },
     "protocol_override_domains": { "googlesyndication": "http" },
-    "block_top_window_navigation": true,
-    "popup_blocker": true,
-    "mute": true,
     "externally_connectable": {
       "matches": [
         "http://*.overwolf.com",
