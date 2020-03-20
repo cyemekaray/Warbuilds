@@ -21,7 +21,7 @@ define(['./BuildByName.js'], buildbyname => {
 
     return `<style>
   body {
-    background-image: url('../../img/ingametestbg5.png');
+    background-image: url('../../img/ingametestbg5.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

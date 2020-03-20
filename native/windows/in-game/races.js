@@ -54,12 +54,22 @@ define({
           'Easy for beginners to just control one hero and unit type',
           'Can take a little while before the build gets rolling, and Paladin is weak at level one',
         ],
-        ['', ''],
+        [
+          'Rifleman are one of the only tier one units that scale well into the late game',
+          "Has trouble dealing with high level tech units that aren't air",
+        ],
       ],
       Analysis: '',
-      Variations: ['', '', ''],
+      Variations: [
+        'Especially against Undead you can skip the Blood Mage and just get a high level Paladin for faster level 3 holy light',
+        'Mountain King second instead of Blood Mage for more pressure',
+        'Add an Archmage and casters',
+      ],
       DiscussionLink: '',
-      Tips: ['', '', ''],
+      Tips: [
+        'Focus down one unit at a time, targeting units vulnerable to piercing damage',
+        'Be careful with the position of your paladin. He is your only frontline tank but he can get CCed and blown up quickly. Weave him in and out of the battlefield as needed',
+      ],
     },
 
     {
@@ -72,8 +82,8 @@ define({
         "Use your Archmage's Brilliance Aura combined with the Alchemist's Healing Spray to keep your troops healthy. Acid Bomb will shred your opponents armor so your Rifleman can rain down on the enemy with shots buffed by Priests' Inner Fire. Heavy creeping build that can scale well into the late game with basic additions. What this build lacks in CC it makes up for in raw firepower and insane sustain.",
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Night Elf, then Undead',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '8',
       BuildTable: [
         ['6/12 Food', '0:01', '4 Peasants to gold. 1 build Altar. Train Peasants'],
@@ -107,7 +117,7 @@ define({
         ],
       ],
       Analysis: '',
-      Variations: ['', '', ''],
+      Variations: ['In 2s can have good synergy with a Night Elf and KoTG'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-4/brilliant-heals-shred-and-snipe-am-alch-rifle-priest',
       Tips: [
         'Use militia creeping to level your Archmage quickly in the opener',
@@ -129,7 +139,7 @@ define({
       Description:
         'Establish economic dominance with this double base opening. A highly risky strategy that relies on the enemy not scouting or playing passively in the early game. Creep and construct an expansion as soon as your hero comes out and tech once your economy has stabilized. Be prepared to tower up and bunker down with your Archmage, Footman, and Peasants.',
       WhenToUseGametypes: 'Solo, FFA',
-      WhenToUseEnemyRaces: '',
+      WhenToUseEnemyRaces: 'Any',
       WhenToUseMaps: 'Safer on larger maps with accessible natural expansions. In solo good on EI, LR, TS.',
       WhenToUseOther: 'If the enemy is fast teching, low aggro, and tends to not scout well.',
       WoodWorkerCount: '8-10+ as needed',
@@ -179,9 +189,8 @@ define({
       ],
       Analysis: '',
       Variations: [
-        'Build towers before you build your expansion, for a more secure playstyle',
+        'Build towers before you build your expansion, for a more secure play style',
         'Add defend and mass footmen until tier 2, or go for Riflemen transition',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-4/rush-to-the-golden-age-am-v-fast-expo',
       Tips: [
@@ -250,8 +259,6 @@ define({
       Analysis: '',
       Variations: [
         "A simple variation for new players is to try fast building your Altar so your hero comes out a little earlier. The benefit is that you can creep faster and more safely since the enemy hero probably won't be out yet. The downside is the loss of resources for fast building",
-        '',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-4/bread-and-butter-human-standard-am-mk-rifle-caster-1',
       Tips: [
@@ -314,7 +321,6 @@ define({
       Variations: [
         'You can harass immediately at level one instead of creeping early to delay tech, but it can be hard with just a solo hero',
         'If the enemy is anticipating your strategy, get an earlier Blacksmith and health + defense upgrade to counter Troll Batriders',
-        'Variation3',
       ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-4/stinky-cheese-magical-mechanics-solo-tinker-fast-tech-mass-gryphs',
@@ -415,8 +421,8 @@ define({
         'Open up by getting with Footmen and later add a Lumber Mill to a fairly standard Tavern human build. When the timing is right, take three peasants to the tavern and pick up a Firelord. Rush to your opponents base and start building Scout Tower near the tree line, using Lava Spawn and your hero to defend your Peasant. Variations for this strat include using different summon heroes like Tinker, or delaying until right before your opponent hits tier 2 before rushing him.',
       WhenToUseGametypes: 'Solo, Team',
       WhenToUseEnemyRaces: 'Orc, Night Elf',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseMaps: 'Small Maps',
+      WhenToUseOther: 'Enemy does poorly against cheese',
       WoodWorkerCount: '7',
       BuildTable: [
         ['5/12 Food', '0:01', '5 Peasants to Gold Mine (5/5). Train Peasants.'],
@@ -458,8 +464,14 @@ define({
           'Not too vulnerable to scouting since you still will have a barracks and no early lumber mill',
           "Somewhat vulnerable to scouting since the opponent will see you don't have a hero summoning",
         ],
-        ['A very snowbally tower rush if you can get your lava spawns multiplying', ''],
-        ['', ''],
+        [
+          'A very snowbally tower rush if you can get your lava spawns multiplying',
+          'Good players will focus down your spawns before they can replicate',
+        ],
+        [
+          'Probably the best early game tower rush strategy that exists right now, not quite meta but fairly viable',
+          'Fairly all in strat, so if it fails you probably lose the game',
+        ],
       ],
       Analysis: '',
       Variations: [
@@ -468,7 +480,7 @@ define({
         'Open with Firelord or Tinker, creep to level three, then pick up the other hero at Tier 2 and do the tower push then.',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-4/simcity-burning-crusade-edition-firelord-tower-rush',
-      Tips: ['Build all your towers on the same side of the enemy base', '', ''],
+      Tips: ['Build all your towers on the same side of the enemy base'],
     },
 
     {
@@ -529,7 +541,7 @@ define({
         ['', ''],
       ],
       Analysis: '',
-      Variations: ['Solo Blood Elf, rush level six for Phoenix', '', ''],
+      Variations: ['Solo Blood Elf, rush level six for Phoenix'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-4/bloody-trolls-bm-fast-expo',
       Tips: [
         'Try harassing with Flamestrike to take out enemy workers and buildings',
@@ -550,7 +562,7 @@ define({
       WhenToUseEnemyRaces: 'All',
       WhenToUseMaps:
         'Melting Valley (best since so many creeps have piercing damage that you can use Defend against, if you do the no Merc variation), Terenas Stand, and Echo Isle. Also can work on larger maps with safe natural expand. Standard variation requires a Mercenary Camp.',
-      WhenToUseOther: '',
+      WhenToUseOther: 'Enemy tends to play passive early, giving you room to expand',
       WoodWorkerCount: '8-10+',
       BuildTable: [
         ['6/12 Food', '0:01', '4 Peasants to gold, 1 builds Altar. Train Peasants'],
@@ -625,7 +637,7 @@ define({
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'All',
       WhenToUseMaps: 'Almost any map works. The more piercing creeps the better.',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '10-12',
       BuildTable: [
         [
@@ -665,7 +677,10 @@ define({
       ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-4/tod-finds-a-way-to-play-an-agility-hero-tavern-opener-footmen-defend-style',
-      Tips: ['', 'Make your Footmen tank the piercing creeps, militia/hero tank other creeps', ''],
+      Tips: [
+        "Micro your Footmen well by toggling defend on and off so you don't get kited",
+        'Make your Footmen tank the piercing creeps, militia/hero tank other creeps',
+      ],
     },
 
     {
@@ -679,11 +694,11 @@ define({
         '../../img/UnitIcons/Priest.png',
       ],
       Description:
-        "Human can choose between two main builds when facing Orc: Rifle Caster or Mass Casters. Legendary Pro ToD prefers to go with the mass caster old school aproach, and it's one of his strongest matchups to this day. It involves playing the Archmage on one base with Footmen in the early game. You tech up after just 2 farms which is a little faster than normal. At Tier 2, spam Priests and Sorceresses to sustain through the enemy DPS and slow the attackers.",
+        "Human can choose between two main builds when facing Orc: Rifle Caster or Mass Casters. Legendary Pro ToD prefers to go with the mass caster old school approach, and it's one of his strongest matchups to this day. It involves playing the Archmage on one base with Footmen in the early game. You tech up after just 2 farms which is a little faster than normal. At Tier 2, spam Priests and Sorceresses to sustain through the enemy DPS and slow the attackers.",
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Orc',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '8',
       BuildTable: [
         [
@@ -719,15 +734,13 @@ define({
       YoutubePro: 'https://www.youtube.com/embed/-2KPSLD122o',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', ''],
+        ["Safe because you aren't doing any fast expanding", 'Hard to focus fire units down without Rifleman DPS'],
         ['', ''],
         ['', ''],
       ],
       Analysis: '',
       Variations: [
         "Get Tier 2 Hero and Buildings based on what he builds (see variations notes). Swap to Gryphon Aviary or Workshop if that's what you need to counter enemy comp",
-        '',
-        '',
       ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-4/tod-s-best-strategy-against-orc-am-1-base-quick-tech-mass-casters',
@@ -753,7 +766,7 @@ define({
       WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: 'Any',
       WhenToUseMaps: 'Any',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '7',
       BuildTable: [
         ['6/10 Food', '0:01', '4 Peons to gold, 1 build Altar. Train Peons'],
@@ -780,15 +793,16 @@ define({
       YoutubePro: 'https://www.youtube.com/embed/2vYpcFBM-fw',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', ''],
+        [
+          'Great basic standard build for beginners',
+          "You will need to explore variations or other builds to play at a high level. This build is simplified by Grubby so it's easy for newbies to follow, but it's not necessarily optimal",
+        ],
         ['', ''],
         ['', ''],
       ],
       Analysis: '',
       Variations: [
         'You can tech with just one burrow, and build the second one after your tech already started, but it limits you to one Grunt in the super early game',
-        '',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-3/bread-and-butter-orc-standard-fs-grunts',
       Tips: [
@@ -817,7 +831,7 @@ define({
       WhenToUseGametypes: 'Solo, 2v2, Team, FFA',
       WhenToUseEnemyRaces: 'Any',
       WhenToUseMaps: 'Maps with Tavern near opponent (e.g. Concealed Hill)',
-      WhenToUseOther: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '7',
       BuildTable: [
         ['6/10 Food', '0:01', '4 peons in Gold, 1 peon on Wood, Train Peons'],
@@ -839,15 +853,16 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', ''],
+        [
+          'Opening with a Tavern hero can throw off players who only know how to deal with standard builds',
+          'Opening with a Tavern hero is hard because your hero will be slightly delayed compared to an Altar hero',
+        ],
         ['', ''],
         ['', ''],
       ],
       Analysis: '',
       Variations: [
         'You may pull the peon a little bit earlier or later to build the barracks depending on the map size/distance to Tavern',
-        '',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-3/hero-for-hire-standard-tavern-opener',
       Tips: [
@@ -869,8 +884,8 @@ define({
       WhenToUseGametypes: 'Big Team',
       WhenToUseEnemyRaces:
         "Works best against Night Elf because their wisps have low HP, their ancients have less armor, and Elf players often will start with archers. Archers have low hp and medium armor, which is very vulnerable to grunts. Among the other 3 races, undead ghouls or fiends are pretty vulnerable to mass grunts that quickly, and if their base is open, you can knock out their haunted gold mine. But the downside is, undead's gold mining and their tech depend on 2 different buildings (necropolis and haunted gold mine). And one or the other of those buildings is cheaper than the other races' town hall.",
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '4+',
       BuildTable: [
         ['6/10 Food', '0:01', '4 Peons to gold, 1 build Altar. Train peons.'],
@@ -905,8 +920,6 @@ define({
         "Once you have a healthy grunt mass, you will focus on getting to 50/50 food, only grunts, and creeping to level 3 tauren chieftain (for level 3 shockwave). And you will spend gold on healing salves to keep your army near full hp, and your hero at full mana when you are ready to attack the enemies. As you get enough gold to build a warmill without slowing down your grunt production, you can build one and get attack and armor upgrades. Also, you might want to add a few more lumber peons once you get to this point. This will allow you to tech or expand a bit easier. But the more peons you get, the fewer grunts you can make under 50 food. <p> The goal of the strategy is to get a fast level 3 hero and be ready to attack the enemy between 5:45 and 6:00 with around 38-41 food, near full hp on all your grunts and hero, and near full mana on your tc. Also, you will want a speed scroll to either get into position faster or escape a bad position faster. I mostly use this strategy in 4v4 random team. Some key points about the strategy: Level 2 shockwave kills a full hp wisp in one shot. It maxes out at 12 targets, which can be heroes, buildings, and ground units. Also, elf ancients only have 2 armor if they don't have nature's blessing. This makes them especially vulnerable to getting destroyed early with shockwave/mass grunts.",
       Variations: [
         'Since this strategy generally becomes very vulnerable past the 8 minute mark, sometimes you will need to transition into some other unit combo later in the game. It is possible to squeeze in a delayed expansion, particularly if you start approaching the no upkeep food limit of 50. But most of your resources will be focused on making mass grunts and keeping them healed along with your hero, and making sure you have full mana when you start attacking enemies. ',
-        '',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-3/gruntwave-tc-2-rax-mass-grunts',
       Tips: ['', '', ''],
@@ -927,7 +940,7 @@ define({
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Orc then Hu',
       WhenToUseMaps: 'Any',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '7',
       BuildTable: [
         ['6/10 Food', '0:01', 'Train Peons. 4 to gold, 1 builds Altar'],
@@ -957,7 +970,7 @@ define({
       ],
       Analysis:
         "With this strategy Farseer does as mucdh harassment as possible in the early game to weaken enemy economy. This is momentum based strat so don't even think of expanding. This almost always ends with you towerrushing or Raider rushing",
-      Variations: ['Instead of tower rushing them, you can also go double Beastiary', '', ''],
+      Variations: ['Instead of tower rushing them, you can also go double Beastiary'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-3/multiply-and-conquer-fs-fl-tower-push',
       Tips: [
         'Lavaspawn requires 15 vs-unit hits to split and regenerate',
@@ -1005,22 +1018,22 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', 'Headhunters are weak in small numbers if you get found out'],
+        [
+          'Potent element of surprise. Okay if you lose units since headhunters are so cheap and expendable',
+          'Headhunters are weak in small numbers if you get found out',
+        ],
         ['', 'Requires very good micro'],
         ['', ''],
       ],
       Analysis: '',
       Variations: [
         "If dealing damage but can't win outright, transition to TC 2nd, T3. Add Spirit Link and level up TC to 3 with Stomp. Add Spirit Link and level up TC to 3 with Stomp. Berserker upgrade and keep upgrading HH (can be on Armor too)",
-        '',
-        '',
       ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-3/spearchucker-surprise-blitzkrieg-fs-2-rax-proxy-hh-mass',
       Tips: [
         'Save up to 10+, and HH are an effective focus fire squad',
         'Bring Towers for the final push to secure the victory',
-        '',
       ],
     },
 
@@ -1036,10 +1049,10 @@ define({
       UnitIcons: ['../../img/UnitIcons/Wind Rider.png', '../../img/UnitIcons/Shaman.png'],
       Description:
         "This build can be considered cheese or fairly standard depending on the gametype and what variation you choose. The standard version opens with Blademaster harass, while you fast tech to tier two. Build as many towers as you feel like you need situationally to survive the early game. At tier two (and it's essential that your timings are on point with this build), get a Shadow Hunter, Wind Rider, and Shaman. Once tier three add in a Tauren Chieftain. Your hero spell combination consisting of Lightning Orb (on the BM), Hex, and War Stomp, plus Shaman bloodlusted Wind Rider' envenomed spears, are amazing for disabling and bursting down heroes. Variations include solo Blademaster and replacing Wind Rider for Troll Batrider.",
-      WhenToUseGametypes: '',
-      WhenToUseEnemyRaces: '',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseGametypes: 'Any',
+      WhenToUseEnemyRaces: 'Any',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '9',
       BuildTable: [
         ['6/10 Food', '0:01', '4 Peons to gold, one builds Altar. Train Peons'],
@@ -1084,7 +1097,7 @@ define({
       YoutubePro: 'https://www.youtube.com/embed/ORItaoSso54',
       YoutubeClan: '',
       ProsAndCons: [
-        ['Best lockdown in the entire game, plus insanely high dps', ''],
+        ['Best lockdown in the entire game, plus insanely high dps', 'Takes a while to scale up your heroes'],
         ['Heroes scale amazingly', 'Unit scaling is mediocre and easily countered by anti-air'],
         ['', ''],
       ],
@@ -1177,7 +1190,6 @@ define({
       Tips: [
         'Gaining creep advantage is key. Learn creep patterns and creep efficiently',
         'This build is challenging to pull off and requires solid micro',
-        '',
       ],
     },
 
@@ -1228,14 +1240,14 @@ define({
           'Weak against Humans and Orcs who can deal with the piercing damage of Headhunters',
         ],
       ],
-      Analysis: '',
+      Analysis: 'This is a very solid build in team games, but can even work in solo.',
       Variations: [
         'Can incorporate Kodo Beasts and Witch Doctors as needed',
         'You can delay your altar and build your Rax and War mill earlier like in a late DK fiends build (helps if your ally gives you 100g)',
         'Can add more wood peons if you want, which will give you faster research/upgrade wood',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-4/shaka-zulu-and-the-spearchuckers-tc-mass-hh',
-      Tips: ['', '', ''],
+      Tips: ["High level TC is critical for this build. Don't be afraid to creep a lot"],
     },
 
     {
@@ -1312,7 +1324,7 @@ define({
         'A straightforward hack-and-slash ground dominance build. Control the early game by harassing the enemy with your Far Seer and grunts. Achieve a smooth transition to mid-game by putting together an army of auto-attack based ground units (Grunts, Demolishers, Raiders, Kodos, and Troll Headhunters). End in the early/midgame before you are outscaled. Playing this build is sort of like playing a Warrior in an MMO: hit your enemy as hard and as often as possible with big scary weapons to do lots of physical damage.',
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Best vs. Undead and Elf, then Orc (if you all-in)',
-      WhenToUseMaps: '',
+      WhenToUseMaps: 'Any',
       WhenToUseOther: 'Great against fast expansions and Tier 1/2 units.',
       WoodWorkerCount: '7',
       BuildTable: [
@@ -1340,7 +1352,7 @@ define({
         ['', ''],
       ],
       Analysis: '',
-      Variations: ['', '', ''],
+      Variations: ['Add casters', 'Transition to full air', 'BM first instead of FS'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-3/a-beastly-build-fs-sh-early-mid-push',
       Tips: [
         'Use Farseer for good early harass, scouting or creeping',
@@ -1358,10 +1370,10 @@ define({
       UnitIcons: ['../../img/UnitIcons/Grunt.png', '../../img/UnitIcons/Shaman.png'],
       Description:
         'Open with Far Seer and Grunts to pressure your opponent, while you later creep with your Tauren Chieftain. Amass Shamans and heavy hitting units (starting with Grunts). Utilize bloodlust to pull off one massive push against your opponent by midgame. ',
-      WhenToUseGametypes: '',
+      WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: 'Best vs. Human then Orc',
       WhenToUseMaps: 'Any',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '7',
       BuildTable: [
         ['6/10', '0:01', 'Train Peons, 4 to gold, 1 builds Altar'],
@@ -1381,8 +1393,8 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', ''],
-        ['', ''],
+        ['Bloodlust scales incredibly, especially in team games', 'Takes a while before you can train it'],
+        ['TC scales amazingly with mana', 'Far Seer falls off hard late game'],
         ['', ''],
       ],
       Analysis:
@@ -1393,7 +1405,7 @@ define({
         'vs. ORC try adding a Pit Lord with Howl/Cleave, and Zerkers',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-3/bloodthirsty-rage-fs-tc-bloodlust',
-      Tips: ['Remember to cast Lightning Shield (LS) on TC w/ Stomp!', '', ''],
+      Tips: ['Remember to cast Lightning Shield (LS) on TC w/ Stomp!'],
     },
 
     {
@@ -1411,7 +1423,7 @@ define({
       WhenToUseGametypes: 'Solo, Team, FFA',
       WhenToUseEnemyRaces: 'Undead',
       WhenToUseMaps: 'Any',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '7',
       BuildTable: [
         ['6/10 Food', '0:01', 'Train 2 Peons, 4 to gold, 1 builds Altar'],
@@ -1454,7 +1466,7 @@ define({
         ['', ''],
       ],
       Analysis: '',
-      Variations: ['You can mass Wind Riders vs. Undead instead of doing this exact build', '', ''],
+      Variations: ['You can mass Wind Riders vs. Undead instead of doing this exact build'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-3/dealing-with-dk-fiends-standard-trihero-v-ud',
       Tips: [
         'Put Periapt of Vitality, Runed Bracers, Circlet on Blademaster. Put Ring of Protection, Talisman of Evasion on Tauren Chieftain. Put + INT, + Mana on Shadowhunter',
@@ -1504,13 +1516,16 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', ''],
-        ['', ''],
+        ['Works very well against one specific strategy', "Not great if the Elf doesn't play that one strategy"],
+        [
+          "Many players aren't used to dealing with Mirror Image and the uniqueness of the build can throw them off",
+          "Lacks Windwalk which can reduce the Blademaster's surviability, assassination pressure, and mobility",
+        ],
         ['', ''],
       ],
       Analysis:
         "Blademaster level 1 and Grunt can go straight harass Archers, creeps or wisps. Point is to delay expansion. After some harass, go home, pick up Salve, and creep Mercs. If they don't expand, max 3-4 Shamans. If they do, 5-8 Shamans. Mirror Image removes Entangle/Acid Bomb, and LS synergy.",
-      Variations: ['', '', ''],
+      Variations: ['Add a Tauren Chieftain third'],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-3/how-to-destroy-keeper-alchemist-lightning-shield-mirror-image-bm',
       Tips: [
@@ -1539,7 +1554,7 @@ define({
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Any, but best vs. Human',
       WhenToUseMaps: 'Any',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '8',
       BuildTable: [
         ['6/10 Food', '0:01', '1 Peon builds Altar immediately. 4 Peons to gold. Train Peons until 8 on wood.'],
@@ -1594,9 +1609,9 @@ define({
       Description:
         'This is a strategy I’ve mostly used in 4v4 Random Team. The idea is to tech early for Frost Wyrms and Orb of Corruption. With a solo Lich and Ghoul, you have the ability to either creep up quickly, or dive/harass players early. The Lich has a lot of synergy with Frost Wyrm, because you get high burst damage aoe with powerful slowing debuffs. And if the enemy is able to lock down your Frost Wyrm and get close to the 1350 damage required to kill the Frost Wyrm, you can Dark Ritual it to deny them big chunks of experience (and refill Lich mana). Having access to Frost Wyrm before all of the enemies are prepared for them can be a gamechanger. The downside is your midgame is generally not as strong as some other races because ghouls have weak stats. Another downside is the army is somewhat one dimensional and requires you to commit a lot of resources to set up. So it’s likely at least one enemy will build a strong counter to your army.',
       WhenToUseGametypes: 'Big Team',
-      WhenToUseEnemyRaces: '',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseEnemyRaces: 'Any',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '5',
       BuildTable: [
         [
@@ -1635,7 +1650,9 @@ define({
       ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-1/wrath-of-the-lich-king-or-queen-lich-1-rax-ghouls-fast-tech-mass-wyrms',
-      Tips: ['', '', ''],
+      Tips: [
+        'Rally point your Shade onto the enemy Blademaster or army to keep track of him as he moves around the map',
+      ],
     },
 
     {
@@ -1653,7 +1670,7 @@ define({
       WhenToUseGametypes: 'Solo, 2v2, Team, FFA',
       WhenToUseEnemyRaces: 'Any',
       WhenToUseMaps: 'Any',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '4',
       BuildTable: [
         ['5/10 Food', '0:01', 'Train 1 Acolyte, send Acolytes to Gold, Ghoul to Wood'],
@@ -1685,12 +1702,19 @@ define({
       YoutubePro: 'https://www.youtube.com/embed/DyQIdmULsUg',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', ''],
+        [
+          'Simple and easy to follow for new players',
+          'Oversimplified and will not work well at high levels of play (but good for learning the basics)',
+        ],
         ['', ''],
         ['', ''],
       ],
       Analysis: '',
-      Variations: ['', '', ''],
+      Variations: [
+        'Tier 3 add a Frost Wyrm or two',
+        'Build more or less fiends to speed up or slow down the tech depending on the army composition you need',
+        'Pit Lord, Dark Ranger, Naga, or almost any hero workable third',
+      ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-1/safe-and-easy-undead-late-dk-lich-fiend-stat-shee',
       Tips: [
         "Scout with every 'even' summon of Rod. For example, you're at 4/4 charges - summon 2 skellies, scout with 1. At 3/4 charges, both creep. What you're looking for is an expansion, so check their gold mines.",
@@ -1708,10 +1732,10 @@ define({
       Description:
         "I'm not sure it's appropriate to call this build cheese, but it's definitely hard to pull off and vulnerable to good scouting. It was originated by the legendary undead players Lucifer. Start with Death Knight harass and fast tech to tier 2. Solo hero works best for this build in 1v1 because you won't have any units to help you creep and level up. Once there, make Necromancers and Meat Wagons. Grab a sacrificial skull and load up your wagons with corposes and do an all-in push on the enemy base. Your meat wagons drop their corpses and sit in the back firing from long range. In front of them are necromancers, raising an army of skeletons to act as your frontline. Works well against humans fast expanding. One variation is going Dreadlord and Alchemist for the aura and healing spray, which would work better in big team games. Auto-attack based heroes can synergize well too with Unholy Frenzy. Also, tier one ghouls can help ease your early game but delay your powerspike.",
       WhenToUseGametypes: 'Most viable in big team 3v3+ games',
-      WhenToUseEnemyRaces: '',
+      WhenToUseEnemyRaces: 'Any',
       WhenToUseMaps:
         "Best on long maps beacuse they encourage one big push instead of small skirmishes, and also because it's harder to get flanked",
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '4',
       BuildTable: [
         ['6/10 Food', '0:01', 'Workers to resources. 1 Acolyte summons Altar and Ziggurat. Train 2 Acolytes.'],
@@ -1763,13 +1787,11 @@ define({
       Variations: [
         '2 or 4 Fiend Tech instead of DK fast tech is safer, but signfiicantly delays the NecroWagon push (which already takes forever to setup)',
         'Build Spirit Towers in the midgame if the enemy is pressuring you heavily',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-1/lucifer-s-army-of-the-dead-solo-dk-necrowagons',
       Tips: [
         'Positioning is key. Your army is very immobile. Make sure your Necromancers and Meat Wagons are safe behind the skeletons. Know the map and plan out a path to push on safely. Scouting well helps with this',
         'Build your Nerubian Tower Ziggurat offensively, in front of your Necropolis, rather than at the back adjacent your gold mine. Works best against Human.',
-        '',
       ],
     },
 
@@ -1785,7 +1807,7 @@ define({
       WhenToUseEnemyRaces: 'Human and Night Elf',
       WhenToUseMaps: 'Any',
       WhenToUseOther: 'If the enemy is likely to fast expand',
-      WoodWorkerCount: '',
+      WoodWorkerCount: '2+',
       BuildTable: [
         [
           '6/10 Food',
@@ -1818,7 +1840,7 @@ define({
       ],
       Analysis:
         'As soon as your hero and gargs are out you have a small window of time where the enemy will have no towers or anti-air. Play hyper aggressive and abuse that time window. Taking out workers and buildings can prevent them from training units to counter you. Avoid creeping early game, midgame its okay to use Gargoyles to take out big air creep camps like level 6 drake',
-      Variations: ['', '', ''],
+      Variations: ['Ziggurats instead of Necropolises -- safer but slower tech', 'Earlier hero or another Tavern hero'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-1/hyper-gargs-late-hero-fastest-possible-garg-mass',
       Tips: [
         'Be. Aggressive. B.E. Aggressive',
@@ -1843,7 +1865,7 @@ define({
       WhenToUseEnemyRaces: 'Orc and Night Elf',
       WhenToUseMaps: 'Any',
       WhenToUseOther: 'If the enemy is likely to fast expand',
-      WoodWorkerCount: '',
+      WoodWorkerCount: '1',
       BuildTable: [
         ['6/10 Food', '0:01', 'All workers to resources. Make 2 Acolytes'],
         ['7/10 Food', '0:16', 'First Acolyte out build 2 Necropolises then gold (4/5)'],
@@ -1869,7 +1891,7 @@ define({
       ],
       Analysis:
         'You should scout your target to see if its undead, and then head there with a rod of necromancy, 1-2 sacrificial skulls (if not UD) and a ~15-16 acolytes. 2 acolytes are a lot like 1 ghoul, a bit less dps a bit more ehp, and far better at bodyblocking and regen. Enemies units ignore them and try to path around them when attack moving, the acolytes can both summon and mass repair ziggurats that turn into frost towers, and provide a stream of disposable bodies for skeletons and dark ritual. If your lich hits level 3 in the ensuing fight, you can take level 2 dark ritual and be able to frost nova off cooldown nonstop. In particular, the acolytes are good at maneuvering to surround enemy heroes slowed by frost nova.',
-      Variations: ['', '', ''],
+      Variations: ['Crypt Lord with Beetles or Death Knight instead of Lich'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-1/the-damned-stand-ready-mass-acolyte-tower-rush',
       Tips: [
         'Be. Aggressive. B.E. Aggressive',
@@ -1890,7 +1912,7 @@ define({
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Orc',
       WhenToUseMaps: 'Smaller maps, close spawn, Echo Isles, Amazonia, Last Refuge',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '1/2',
       BuildTable: [
         ['6/10 Food', '0:01', 'Train 4th Acolyte, build Crypt & Graveyard same time'],
@@ -1922,7 +1944,6 @@ define({
       Variations: [
         'Start Crypt Lord instead of Lich. Level beetles and focus enemy workers.',
         'Creep a bit before you rush, then hit right before enemy hits tier 2',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-1/embrace-the-cold-lich-t1-tr',
       Tips: ["No need to scout since you're going all-in anyway", '', ''],
@@ -1945,9 +1966,9 @@ define({
       ],
       Description:
         'Unexpected and solid strategy to deal with Blademaster players as Undead. Open by creeping up your Death Knight with Crypt Fiends. After teching, grab a Lich and put together the rest of your army: Necromancer, Shade, and Obsidian Statue. Top it off with an Orb tier 3 and a Pit Lord. The combination of Death Pact, Frost Armor, Howl of Terror, Cripple, HoTs, and invisibility detection will make it extremely hard for the Blademaster to do anything to you. Expand around 50 food to seal the win.',
-      WhenToUseGametypes: '',
+      WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: 'Orc',
-      WhenToUseMaps: '',
+      WhenToUseMaps: 'Any',
       WhenToUseOther: 'Hard counter to Blademaster',
       WoodWorkerCount: '4',
       BuildTable: [
@@ -1989,10 +2010,15 @@ define({
       ],
       Analysis:
         'This build differs from most Undead builds because the powerspike hits at tier two instead of tier three. This gives players more control over the game as opposed to having to wait for high level tri-hero and destroyers before you can take control of the map and your opponent.',
-      Variations: ['', '', ''],
+      Variations: [
+        'Build other heroes earlier and DK later, or skip DK totally',
+        'Add a Frost Wyrm for even more slows',
+      ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-1/blademaster-no-problem-dk-lich-pl-shade-necro-stats-anti-bm',
-      Tips: ['', '', ''],
+      Tips: [
+        'Track the Blademaster before, during, and after fights. Manually be sure to use all the necessary abilities to shut him down',
+      ],
     },
 
     {
@@ -2006,7 +2032,7 @@ define({
       WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: 'Human, Night Elf, Undead',
       WhenToUseMaps: 'Maps with a comfortable natural expansion, larger maps',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '7',
       BuildTable: [
         ['5/10 Food', '0:01', 'Workers to gather resources. Build Crypt, Ziggurat + Train 2 Acolytes '],
@@ -2044,7 +2070,7 @@ define({
         'Solo DL for faster level 6 (Infernal!)',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-1/vampire-empire-dl-fast-expo',
-      Tips: ['Use Sleep to surround & kill or force Town Portals', '', ''],
+      Tips: ['Use Sleep to surround & kill or force Town Portals'],
     },
 
     {
@@ -2062,7 +2088,7 @@ define({
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Any but Orc',
       WhenToUseMaps: 'Larger maps with comfortable natural expansion',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '9',
       BuildTable: [
         ['5/10 Food', '0:01', 'Workers to resources. Train 2 Acolytes. 1 Acolyte builds Crypt + Altar immediately'],
@@ -2125,9 +2151,9 @@ define({
       ],
       Description:
         'This build used to be fairly standard meta against Night Elf and it still works effectively today. Open with a Death Knight ghoul harass. At tier two grab a Lich and Gargoyles to follow up with even more pressure. Works best against Night Elf as you can pick off wisps and undermine their base security and economy. Switch to Crypt Fiend late game if they go Hippogryphs. Win the air battle.',
-      WhenToUseGametypes: '',
+      WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: 'Night Elf',
-      WhenToUseMaps: '',
+      WhenToUseMaps: 'Any',
       WhenToUseOther: 'Direct counter to KoTG Fast Expo/Air',
       WoodWorkerCount: '3-7',
       BuildTable: [
@@ -2165,10 +2191,13 @@ define({
       ],
       Analysis:
         'Objective is to either destroy the Elf fast expand or inflict enough damage to make it not worth. Either you win Air Battle (Gargoyle vs Hippogryph) or you switch to Fiends earlier and have them overcommit to Hippoes. Use the gargs to creep air units like the level 6 Drake, cancel buildings (e.g. Ancient of Lore, Tree of Life Expo, Entangled Goldmine), andkill Wisps.',
-      Variations: ['If they mass Hippos, switch into T3 + Fiends + Orb + Statues', '', ''],
+      Variations: ['If they mass Hippos, switch into T3 + Fiends + Orb + Statues'],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-1/how-to-annoy-annoying-elf-players-dk-2-rax-ghoul-garg-fiend',
-      Tips: ['', '', ''],
+      Tips: [
+        'DK solo with Gargoyles works well',
+        'Instead of DK you can open Alchemist for more harass potential but slower Gargoyle movement speed',
+      ],
     },
 
     {
@@ -2212,7 +2241,7 @@ define({
       ],
       Analysis:
         "Aiming for hero surrounds, moonwells, and workers, is a very good strategy for succeeding in this rush. Shut down the enemy's healing sources and economy. This is an all-in strat so put everything you have into a relentless push. Keys to victory are good micro and relentless Ghoul production",
-      Variations: ['You can unsummon Tomb of Relics and Necropolis for bonus gold', '', ''],
+      Variations: ['You can unsummon Tomb of Relics and Necropolis for bonus gold'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-1/night-of-the-living-dead-dk-2-rax-mass-ghoul-rush',
       Tips: [
         'If DK goes down, use tavern to revive him.',
@@ -2240,7 +2269,7 @@ define({
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Any',
       WhenToUseMaps: "Veto Echo Isles and Amazonia. Maps where it's hard to expand are best.",
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '3',
       BuildTable: [
         ['6/10 Food', '0:01', 'Train 2 Acolytes. Build Altar & 1st Ziggurat same time'],
@@ -2314,10 +2343,10 @@ define({
       ],
       Description:
         "Grubby's infamous Pit Lord hypercarry build. Open with Death Knight harass into Crypt Fiends and Obsidian Statues. At tier two grab a Pit Lord with Cleave and buff him up with Necromancer's Unholy Frenzy. Prepare to do a ton of splash damage and also be extremely hard to kill thanks to all your buffs and heals.",
-      WhenToUseGametypes: '',
+      WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: 'Orc and Human',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '4',
       BuildTable: [
         ['6/10 Food', '0:01', 'Train 2 Acolytes. Build Altar & Ziggurat same time'],
@@ -2366,8 +2395,6 @@ define({
       Analysis: 'Howl of Terror and Death Coil keeps your Pit Lord alive',
       Variations: [
         'Swap Necromancers for Banshees, or just add Banshees for the anti-magic shield and curse -- really helps your heroes survive longer',
-        '',
-        '',
       ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-1/grubby-the-unkillable-demon-king-dk-pl-necro-unholy-frenzy',
@@ -2392,10 +2419,10 @@ define({
       ],
       Description:
         "This is Grubby's Bloody Beginner Night Elf build. If you're just going to learn one strategy for Night Elf, learn this one. It's a very versatile and strong opener that centers around the Demon Hunter and Archers. Mix it up between harassing and creeping. Transition into the Keeper of the Grove, Dryads, and Druid of the Claw for the mid game. Adapt freely. Creep whenever you are free. Heal between creeps",
-      WhenToUseGametypes: '',
-      WhenToUseEnemyRaces: '',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseGametypes: 'Any',
+      WhenToUseEnemyRaces: 'Any',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '10',
       BuildTable: [
         ['5/10 Food', '0:01', '4 wisps @ Gold, 1 build Altar, maintain 2 Wisps in production '],
@@ -2433,18 +2460,19 @@ define({
       YoutubePro: 'https://www.youtube.com/embed/ms-Zks9x-ew',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', ''],
+        [
+          'Easy to follow and simple for new players',
+          'Does not work well at high levels of play without significant variations.',
+        ],
         ['', ''],
         ['', ''],
       ],
       Analysis: '',
       Variations: [
         'One variation is to AoW rush them (best vs Night Elf). works well with Blademaster ally. you can make a second AoW to creep too if you want',
-        '',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-2/bread-and-butter-night-elf-dh-arch-opener',
-      Tips: ['Hide wisps between Moonwells & trees. Reproduce if losses', '', ''],
+      Tips: ['Hide wisps between Moonwells & trees. Reproduce if losses'],
     },
 
     {
@@ -2462,7 +2490,7 @@ define({
         "I do this build specifically in Night Elf mirror games, but it's very flexible and solid all around for players of every level. The main goal is to punish enemies for creeping too aggressively or just being out of position with slow units. Open with a Demon Hunter. You have a strong midgame followup with a Naga Sea Witch from the tavern for slow arrow and Dryads if they are making Huntresses, Druid of the Claw (Bears) or Mountain Giants if they focused more on squishy ranged units. Your hero and units can be dangerous early game due to their speed and damage, but since you are only getting 1 AoW, you can be vulnerable to all in dual AoW rush builds.",
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Elf Mirror',
-      WhenToUseMaps: '',
+      WhenToUseMaps: 'Any',
       WhenToUseOther:
         'Specifically aimed at countering archer build/aow creep strategies that also tech relatively quickly.',
       WoodWorkerCount: '7',
@@ -2482,7 +2510,7 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', ''],
+        ['Strong at punishing AoW creeping', 'If enemy plays safe early game, not optimal'],
         ['', ''],
         ['', ''],
       ],
@@ -2491,10 +2519,11 @@ define({
       Variations: [
         "Once you get to 3 hunts, you want to have a good idea of what the enemy is doing. Are they aggressively creeping, are they doing a mass Huntress / Glaive Thrower strat? Did they go Keeper of the Grove instead for Treants/Entangle? Are they going to try for a fast expand? You want to be prepared to counter them as their strat develops, not having to wait and see their full army before you make counter units. Don't lock yourself into the written build order; instead, learn to adapt",
         'It’s possible to add a 2nd Ancient of War before or during tech and focus more on a big Huntress/Glaive thrower rush, or even transitioning to Archers - > Hippogryph Riders. Naga (with Frost Arrows) used to be one of the standard 2nd heroes in this matchup thanks to her immense pressure, but due to several balance changes for heroes, you could potentially change up the heroes (even going for a Keeper of the Grove first and Alchemist 2nd).',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-2/gang-leader-illidan-dh-naga-1-rax-hunts-into-2x-lore',
-      Tips: ['', '', ''],
+      Tips: [
+        'The strength of your army lies in its mobility. As the Night Elf, in most matches you decide when you fight. Use this to your advantage',
+      ],
     },
 
     {
@@ -2512,11 +2541,11 @@ define({
       UnitIcons: ['../../img/UnitIcons/Archer.png'],
       Description:
         'This is a basic build order for new players who want to know how they should organize their early game if they want to open with a Tavern hero and Archers. The following heroes are recommended for Elf: Dark Ranger, Pandaren Brewmaster, or Pit Lord (vs. Human), Alchemist (vs. Orc), Dark Ranger, Pandaren Brewmaster, or Naga Sea Witch (vs. Undead), Alchemist or Naga Sea Witch (vs. Elf). Your hero will come out late but this opens up a lot of angles for strategic diversity!',
-      WhenToUseGametypes: '',
-      WhenToUseEnemyRaces: '',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
-      WoodWorkerCount: '',
+      WhenToUseGametypes: 'Any',
+      WhenToUseEnemyRaces: 'Any',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
+      WoodWorkerCount: '~7',
       BuildTable: [
         ['5/10 Food', '0:01', '5 Wisps on Gold. Train a queue of Wisps.'],
         ['6/10 Food', '0:14', '1st new Wisp builds Moonwell'],
@@ -2539,16 +2568,16 @@ define({
       ProsAndCons: [
         [
           'Tavern heroes tend to have great mid/late games',
-          'Taven heroes tend to have weak early games as they are vulnerable to harasss',
+          'Taven heroes tend to have weak early games as they are vulnerable to harass',
         ],
         ['', ''],
         ['', ''],
       ],
       Analysis:
         'Tavern hero openers used to be meta for Night Elf from 2003 to 2005. From 2005 to 2017 they were regularly seen, but these days since the Keeper of the Grove was buffed he has become stronger than the other summoners like Beastmaster and Firelord thanks to Entangle CC. Nowadays, the reason to pick a Tavern hero is for strong autoattack heroes like Pitlord, Panda, Alchemist, and Naga Sea Witch',
-      Variations: ['', '', ''],
+      Variations: ['Change up the Tavern hero choice!'],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-2/join-the-sentinels-basic-tavern-opener',
-      Tips: ['', '', ''],
+      Tips: ['You can fake build a hero in your Altar to throw off the enemy when they scout your base'],
     },
 
     {
@@ -2598,7 +2627,6 @@ define({
       Tips: [
         'You can build an extra wisp to go to 18 wood and use it to build a shop for clarity potions',
         'If playing vs mass hunts Elf mirror, especially in team games, they will try to hall you if they are skilled. You can build your buildings surrounding your main to make this more difficult',
-        '',
       ],
     },
 
@@ -2615,9 +2643,9 @@ define({
       Description:
         'This build features an almost all female army and is most effective against Human. It involves massing Archers during tier one, teching to tier two, and creeping your Dark Ranger to level three for level two Black Arrow. When you hit tier two, the goal is to hire a Naga Sea Witch for frost arrow and hit the human main to snipe low hp units. Every unit you kill with black arrow creates a skeleton. The game can quickly snowball in your favor if you start picking off militia. If you need to you have options to tech into Dryads and Druid of the Talon: cost-effective and highly spammable units. The pros are it’s a straightforward, and fairly simple strategy to execute. One downside is if you don’t start winning on the push, the human player can generally make strong counter units like spellbreakers or rifles and mortars with upgrades.',
       WhenToUseGametypes: 'Solo, 2v2, Team, FFA',
-      WhenToUseEnemyRaces: '',
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseEnemyRaces: 'Human',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '9',
       BuildTable: [
         ['5/10 Food', '0:01', '4 wisps to gold, 1 builds Ancient of War. Train wisps nonstop until 9 on wood'],
@@ -2659,7 +2687,9 @@ define({
       ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-2/sexy-rogues-dr-naga-1-rax-arch-to-dott-dry-t2-push-tavern-mass-ranged-v-hu',
-      Tips: ['', '', ''],
+      Tips: [
+        'Focus firing is everything with this build. Target units vulnerable to your damage types and punish them one by one',
+      ],
     },
 
     {
@@ -2673,7 +2703,7 @@ define({
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: 'Best vs. Orc => NE/UD',
       WhenToUseMaps: 'Smaller rush maps',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '9',
       BuildTable: [
         ['6/10 Food', '0:01', '4 wisps to Gold, 1 builds Altar. Build Wisps'],
@@ -2706,10 +2736,10 @@ define({
         ['', ''],
       ],
       Analysis: '',
-      Variations: ['', '', ''],
+      Variations: ['Add a PoTM for the aura and additional focus fire'],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-2/our-arrows-will-blot-out-the-sun-kotg-naga-mass-aow-arch-rush-v-orc',
-      Tips: ['Watch out for speed scroll flanks and hero focusing', '', ''],
+      Tips: ['Watch out for speed scroll flanks and hero focusing'],
     },
 
     {
@@ -2765,8 +2795,6 @@ define({
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-2/low-risk-demon-hunting-dh-naga-arch-no-aow-creep',
       Tips: [
         "Don't throw your Archers away like trash just because they're squishy in the early game. They scale well once you have some thick tier two units in front of them",
-        '',
-        '',
       ],
     },
 
@@ -2784,8 +2812,8 @@ define({
         "This build is all about making your solo Warden as powerful as possible by fast teching to get the key units she needs to thrive. You open by AoW creeping with your Archers and harassing. In the standard build you fast tech (so don't build too many archers) and move onto Dryads and Druids of the Claw since the Warden needs healing from Rejuvenation and Abolish Magic's dispel. Variations include fast teching and massing tier one.",
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: "Best vs HU then UD then Orc. Don't play vs Elf (Demon Hunter)",
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '8',
       BuildTable: [
         ['5/10 Food', '0:01', '4 wisps to Gold, 1 builds Altar, build 2 wisps'],
@@ -2816,7 +2844,10 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', 'Weak against Demon hunter'],
+        [
+          'Great at harassing expansions and just generally annoying your opponent while blinking around the map',
+          'Weak against Demon Hunter',
+        ],
         ['', ''],
         ['', ''],
       ],
@@ -2825,10 +2856,9 @@ define({
       Variations: [
         "Warden is best played as Solo Hero until she's level 5 or 6. At that moment, you can add a STR Tav Hero (Alchi or Pit)",
         'Omit 2nd AOW creep if you are being pressured or attacked. Instead, go up to 5 archers sooner.',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-2/maeiv-against-the-world-solo-warden-fast-tech-dry-bear',
-      Tips: ["Don't last-hit creeps w/ AOW (=no XP). Conserve Warden Mana.", '', ''],
+      Tips: ["Don't last-hit creeps w/ AOW (=no XP). Conserve Warden Mana."],
     },
 
     {
@@ -2846,7 +2876,7 @@ define({
       WhenToUseGametypes: 'Solo',
       WhenToUseEnemyRaces: "Best vs UD => HU => Orc. Don't play vs Elf (Demon Hunter)",
       WhenToUseMaps: 'Maps that are easy to expand on: Echo Isles, Terenas Stand, Last Refuge, Amazonia',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '8',
       BuildTable: [
         ['5/10 Food', '0:01', '4 wisps to Gold, 1 builds Altar, build 2 wisps'],
@@ -2881,7 +2911,7 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['', 'Weak against Demon hunter'],
+        ['Great at harassing', 'Weak against Demon hunter'],
         ['', ''],
         ['', ''],
       ],
@@ -2890,7 +2920,6 @@ define({
       Variations: [
         "Warden is best played as Solo Hero until she's level 5 or 6. At that moment, you can add a STR Tav Hero (Alchi or Pit)",
         'Omit AOW creep or creep a very easy camp if you are being pressured or attacked. Instead, pump more archers.',
-        '',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-2/golden-warden-solo-warden-fast-expo',
       Tips: [
@@ -2909,9 +2938,9 @@ define({
       UnitIcons: ['../../img/UnitIcons/Druid of the Talon.png'],
       Description:
         'Those of you who have been playing Warcraft III for a while will remember this old meta strat that first appeared around 2005. You open with Demon Hunter, an Archer, and an AoW. Harass and AoW creep your way through early game. At tier 2 you get a Beastmaster and mass Druid of the Talon. Use cyclone to prevent the Orc from doing anything and your summons to tank.',
-      WhenToUseGametypes: '',
+      WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: 'Orc',
-      WhenToUseMaps: '',
+      WhenToUseMaps: 'Any',
       WhenToUseOther: 'If enemy Orc is playing a standard meta ground army built around the Blademaster',
       WoodWorkerCount: '9',
       BuildTable: [
@@ -2953,10 +2982,10 @@ define({
         ],
       ],
       Analysis: '',
-      Variations: ['', '', ''],
+      Variations: ['Third hero Tinker or Firelord (for more summons)'],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-2/old-school-orc-counter-kotg-naga-mass-aow-arch-rush-v-orc',
-      Tips: ['', '', ''],
+      Tips: ["Use your heroes' summons to frontline tank for the DoTTS. Keep heroes in the air as much as possible"],
     },
 
     {
@@ -2967,10 +2996,10 @@ define({
       UnitIcons: ['../../img/UnitIcons/Archer.png', '../../img/UnitIcons/Huntress.png'],
       Description:
         "The great thing about this build is that it allows you expand for the economic advantage without taking on the massive risks of a fast expo. Open with a Keeper of the Grove and Archers, followed by Huntresses. Tech to tier two before you expand, get an Alchemist, and then set up your second base. After that wait until you're ready to break 50 food and prepare for large army fights.",
-      WhenToUseGametypes: '',
+      WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: 'Orc',
       WhenToUseMaps: 'Comfortable natural expand maps',
-      WhenToUseOther: '',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '8',
       BuildTable: [
         ['5/10 Food', '0:01', '4 wisps to Gold, 1 builds Altar. Build Wisps'],
@@ -2999,13 +3028,13 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['Less risky than the risky KotG + 1 archer fast expo build. ', ''],
+        ['Less risky than the risky KotG + 1 archer fast expo build. ', 'Low risk, but low reward'],
         ['', ''],
         ['', ''],
       ],
       Analysis:
         'With this build, you first develop a pressure combo, force Orc home. You then build the ToL safely at home. Pressuring gives info. ',
-      Variations: ["Don't hesitate to switch from Archers to Huntresses if your scouting calls for it", '', ''],
+      Variations: ["Don't hesitate to switch from Archers to Huntresses if your scouting calls for it"],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-2/a-secure-fortune-kotg-alch-arch-t2-expo',
       Tips: [
         'Use Scrolls of Protection and Healing in big fights.',
@@ -3026,10 +3055,10 @@ define({
       ],
       Description:
         'Strong setup against Undead that centers around the Keeper of the Grove, a second base, and mass air. Use Ancient of War creeping to level up your hero, harass, and take your expansion. As you move into midgame mount your Archers onto your birdies to make Hippogryph Riders, and pump out Faerie Dragons. Focus fire down enemies with Entangling Roots.',
-      WhenToUseGametypes: '',
+      WhenToUseGametypes: 'Any',
       WhenToUseEnemyRaces: "Best vs. Undead. Use variations if Vs. Orc or Hu. Don't play vs Elf",
-      WhenToUseMaps: '',
-      WhenToUseOther: '',
+      WhenToUseMaps: 'Any',
+      WhenToUseOther: 'n/a',
       WoodWorkerCount: '10',
       BuildTable: [
         ['5/10 Food', '0:01', '4 wisps to Gold, 1 builds Altar, build 2 wisps '],
@@ -3057,7 +3086,10 @@ define({
       YoutubePro: '',
       YoutubeClan: '',
       ProsAndCons: [
-        ['Expanding super early allows you to put together a massive tier one army fairly quickly', ''],
+        [
+          'Expanding super early allows you to put together a massive tier one army fairly quickly',
+          'Mass air is easy to counter given enough time',
+        ],
         ['', ''],
         ['', ''],
       ],
