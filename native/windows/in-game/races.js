@@ -65,7 +65,7 @@ define({
         'Mountain King second instead of Blood Mage for more pressure',
         'Add an Archmage and casters',
       ],
-      DiscussionLink: '',
+      DiscussionLink: 'https://www.clanat.org/forum/warbuilds-4/protect-the-snipers-pally-mass-rifles',
       Tips: [
         'Focus down one unit at a time, targeting units vulnerable to piercing damage',
         'Be careful with the position of your paladin. He is your only frontline tank but he can get CCed and blown up quickly. Weave him in and out of the battlefield as needed',
@@ -744,7 +744,7 @@ define({
       ],
       DiscussionLink:
         'https://www.clanat.org/forum/warbuilds-4/tod-s-best-strategy-against-orc-am-1-base-quick-tech-mass-casters',
-      Tips: ["Set Altar rally point outside of base so you don't get trapped", '', ''],
+      Tips: ["Set Altar rally point outside of base so you don't get trapped"],
     },
   ],
 
