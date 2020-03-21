@@ -27,10 +27,6 @@
         user-select: none;
       }
 
-      .dataTables_scrollBody::-webkit-scrollbar {
-        display: none;
-      }
-
       tfoot input {
         width: 100%;
         padding: 3px;
@@ -60,6 +56,35 @@
 
       .greyscale:hover {
         filter: none;
+      }
+
+      /* Customize website's scrollbar like Mac OS */
+
+      /* total width */
+      .dataTables_scrollBody::-webkit-scrollbar {
+        background-color: #fff;
+        width: 16px;
+      }
+
+      /* background of the scrollbar except button or resizer */
+      .dataTables_scrollBody::-webkit-scrollbar-track {
+        background-color: #fff;
+      }
+
+      /* scrollbar itself */
+      .dataTables_scrollBody::-webkit-scrollbar-thumb {
+        background-color: #babac0;
+        border-radius: 16px;
+        border: 4px solid #fff;
+      }
+
+      /* set button(top and bottom of the scrollbar) */
+      .dataTables_scrollBody::-webkit-scrollbar-button {
+        display: none;
+      }
+
+      .dataTables_scrollHeadInner table {
+        width: 1200px !important;
       }
     </style>
   </head>

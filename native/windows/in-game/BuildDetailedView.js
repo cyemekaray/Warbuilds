@@ -72,14 +72,13 @@ div.ad
     border: 2px solid rgb(255, 255, 255);
     opacity: 0.8;
     padding-top: 7px;
-    padding-right: 0px;
+    padding-right: 2px;
     padding-bottom: 9px;
     padding-left: 0px;
     padding-top: 0px;
     overflow: auto;
     height: 225px;
     width: 300px;
-    max-width: 300px;
     border-radius: 4px;
     display: block;
     margin: 5px;
@@ -107,11 +106,6 @@ div.ad
     border-collapse: collapse;
     border-radius: 4px;
     font-size: 12px;
-  }
-
-  .textbox::-webkit-scrollbar,
-  .buildbox::-webkit-scrollbar, .tipbox::-webkit-scrollbar {
-    display: none;
   }
 
   div.rightsidecontainer {
@@ -247,6 +241,31 @@ div.ad
   .buildDescription{
     margin-top: 11px;
     margin-bottom: 10px;
+  }
+
+  /* Customize website's scrollbar like Mac OS */
+
+  /* total width */
+  *::-webkit-scrollbar {
+    background-color: #fff0;
+    width: 8px;
+  }
+
+  /* background of the scrollbar except button or resizer */
+  *::-webkit-scrollbar-track {
+    background-color: #fff0;
+  }
+
+  /* scrollbar itself */
+  *::-webkit-scrollbar-thumb {
+    background-color: #babac088;
+    border-radius: 16px;
+    border: 2px solid #fff0;
+  }
+
+  /* set button(top and bottom of the scrollbar) */
+  *::-webkit-scrollbar-button {
+    display: none;
   }
   
 </style>
