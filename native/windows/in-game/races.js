@@ -922,7 +922,7 @@ define({
         'Since this strategy generally becomes very vulnerable past the 8 minute mark, sometimes you will need to transition into some other unit combo later in the game. It is possible to squeeze in a delayed expansion, particularly if you start approaching the no upkeep food limit of 50. But most of your resources will be focused on making mass grunts and keeping them healed along with your hero, and making sure you have full mana when you start attacking enemies. ',
       ],
       DiscussionLink: 'https://www.clanat.org/forum/warbuilds-3/gruntwave-tc-2-rax-mass-grunts',
-      Tips: ['', '', ''],
+      Tips: ['Look for opportunities to hit and run and hall the enemy'],
     },
 
     {

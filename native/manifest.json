@@ -43,6 +43,11 @@
         "action-type": "custom",
         "default": "F9"
       },
+      "lockin": {
+        "title": "Lock In",
+        "action-type": "custom",
+        "default": "F5"
+      },
       "showhidelockedin": {
         "title": "Show/Hide Locked In Window",
         "action-type": "custom",
@@ -103,6 +108,7 @@
         "focus_game_takeover_release_hotkey": "sample_app_showhide",
         "transparent": true,
         "resizable": true,
+        "disable_rightclick": true,
         "size": {
           "width": 400,
           "height": 500
@@ -152,7 +158,7 @@
         "https://www.clanat.org/"
       ]
     },
-    "force_browser": "overwolf",
+    "force_browser": "user",
     "developer": {
       "enable_auto_refresh": true,
       "reload_delay": 1000,

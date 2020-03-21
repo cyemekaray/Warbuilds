@@ -25,6 +25,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        z-index: -1;
       }
 
       .UpperTitle {
@@ -203,7 +204,8 @@
           <div style="flex-grow: 1; align-self: center; justify-content: center">
             <center>
               <b>Timer:&nbsp;</b><span id="currentTime">0:00</span>&nbsp;<br /><b>Start/Pause:</b>
-              <span id="startpauseHotkey">F9</span>&nbsp;<br /><b>Reset:</b>&nbsp;<span id="resetHotkey">F9</span>
+              <span id="startpauseHotkey">F6</span>&nbsp;<br /><b>Reset:</b>&nbsp;<span id="resetHotkey">F9</span
+              >&nbsp;<br /><b>Lock In:</b>&nbsp;<span id="lockinHotkey">F5</span>
             </center>
           </div>
 
@@ -350,6 +352,23 @@
             top: 10,
           })
         })
+        var canClickThroughWindow = false
+        overwolf.settings.registerHotKey('lockin', function(result) {
+          if (canClickThroughWindow === false) {
+            overwolf.windows.setWindowStyle('BuildLockedIn', 'InputPassThrough', function(status) {
+              console.log(status)
+              canClickThroughWindow = true
+            })
+          } else {
+            overwolf.windows.removeWindowStyle('BuildLockedIn', 'InputPassThrough', function(status) {
+              console.log(status)
+              canClickThroughWindow = false
+            })
+          }
+          // overwolf.windows.obtainDeclaredWindow('BuildLockedIn', function(currentWindow) {
+          //   console.log(currentWindow)
+          // })
+        })
 
         var hidden = false
         overwolf.settings.registerHotKey('showhidelockedin', function(result) {
@@ -375,6 +394,11 @@
         overwolf.settings.getHotKey('reset', function(result3) {
           $('#resetHotkey').html(result3.hotkey)
           console.log(result3.hotkey)
+        })
+
+        overwolf.settings.getHotKey('lockin', function(result4) {
+          $('#lockinHotkey').html(result4.hotkey)
+          console.log(result4.hotkey)
         })
       })
     </script>
