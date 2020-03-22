@@ -2266,8 +2266,8 @@ define({
       ],
       Description:
         "If you were only going to play one Undead build for the rest of time and you wanted to win as much as possible, this build wouldnt be a bad choice. Hey, just ask Happy, it's pretty much all he plays (with minor variations). Open with Death Knight and do a Skeleton Rod harass. Steal creeps with Death Coil. Creep with Crypt Fiends. Grab a Lich and Obsidian Statue tier 2. Tier 3 get an Orb of Corruption, Dark Ranger, and Destroyers. Kite like your life depends on it. Deny enemy expansions. Nuke stuff. Enjoy your WCG trophies.",
-      WhenToUseGametypes: 'Solo',
-      WhenToUseEnemyRaces: 'Any',
+      WhenToUseGametypes: 'Any, but designed for solo',
+      WhenToUseEnemyRaces: 'Any, but weaker against Orc',
       WhenToUseMaps: "Veto Echo Isles and Amazonia. Maps where it's hard to expand are best.",
       WhenToUseOther: 'n/a',
       WoodWorkerCount: '3',
