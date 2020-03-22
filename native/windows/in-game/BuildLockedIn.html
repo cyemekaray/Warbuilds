@@ -15,10 +15,7 @@
         display: none;
       }
       body {
-        background-image: url('../../img/ingametestbg5.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
+        background-color: rgb(24, 0, 0);
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -44,6 +41,7 @@
         opacity: 0.8;
         padding-top: 2px;
         padding-bottom: 5px;
+        height: 100%;
         width: 100%;
         border-radius: 4px;
         display: block;
@@ -57,7 +55,7 @@
         padding-left: 0px;
         padding-top: 0px;
         overflow: auto;
-        height: 290px;
+        height: 295px;
         width: 100%;
         display: block;
         margin: 0px;
@@ -131,10 +129,10 @@
     </style>
   </head>
 
-  <body class="in-game">
+  <body class="in-game" id="removedbodybackground">
     <!-- -------------------------------- Header ------------------------------- -->
 
-    <header class="app-header">
+    <header class="app-header" id="removedwhenlockedin1">
       <img src="../../img/header_icon.png" />
       <h1>Warbuilds</h1>
       <h1 style="margin: auto;">Show/Hide:&nbsp;<span id="showandhide">F7</span></h1>
@@ -183,7 +181,7 @@
     <!-- --------------------------------- Main -------------------------------- -->
 
     <main id="main">
-      <div style="display:flex; align-items:center">
+      <div style="display:flex; align-items:center" id="removedwhenlockedin2">
         <div class="UpperTitle" style="width:60px">
           <img class="backButton" src="../../img/backarrow.png" id="BackToDetailedViewButton" />
         </div>
@@ -191,7 +189,7 @@
           <h3><b id="buildName"></b></h3>
         </div>
       </div>
-      <hr />
+      <!-- <hr id="removedwhenlockedin3" /> -->
       <div id="backgroundColor" style="border-radius: 4px;" class="outerbox">
         <div class="containerAboveTable">
           <div style="flex-grow: 1; align-self: center; justify-content: flex-start">
@@ -203,16 +201,30 @@
 
           <div style="flex-grow: 1; align-self: center; justify-content: center">
             <center>
-              <b>Timer:&nbsp;</b><span id="currentTime">0:00</span>&nbsp;<br /><b>Start/Pause:</b>
-              <span id="startpauseHotkey">F6</span>&nbsp;<br /><b>Reset:</b>&nbsp;<span id="resetHotkey">F9</span
-              >&nbsp;<br /><b>Lock In:</b>&nbsp;<span id="lockinHotkey">F5</span>
+              <b>Timer:&nbsp;</b><span id="currentTime">0:00</span>&nbsp;<br /><b id="startbutton">Start/Pause:</b>
+              <span id="startpauseHotkey">F6</span>&nbsp;<br /><b id="resetbutton">Reset:</b>&nbsp;<span
+                id="resetHotkey"
+                >F9</span
+              >&nbsp;<br /><b>Lock/Unlock</b>&nbsp;<span id="lockinHotkey">F5</span>
             </center>
           </div>
 
           <div style="flex-grow: 1; align-self: center; justify-content: flex-end">
             <center>
-              <input type="button" class="fontbuttons" value="+" onclick="increaseFontSize('scroller', 1)" />&nbsp;
-              <input type="button" class="fontbuttons" value="-" onclick="increaseFontSize('scroller', -1)" />
+              <input
+                type="button"
+                id="plusbutton"
+                class="fontbuttons"
+                value="+"
+                onclick="increaseFontSize('scroller', 1)"
+              />&nbsp;
+              <input
+                type="button"
+                id="minusbutton"
+                class="fontbuttons"
+                value="-"
+                onclick="increaseFontSize('scroller', -1)"
+              />
             </center>
           </div>
         </div>
@@ -357,17 +369,33 @@
           if (canClickThroughWindow === false) {
             overwolf.windows.setWindowStyle('BuildLockedIn', 'InputPassThrough', function(status) {
               console.log(status)
-              canClickThroughWindow = true
             })
+            document.getElementById('removedwhenlockedin1').style.display = 'none'
+            document.getElementById('removedwhenlockedin2').style.display = 'none'
+            document.getElementById('main').style.padding = '0px'
+            document.getElementById('backgroundColor').style.height = '390px'
+            document.getElementById('backgroundColor').style.width = '100%'
+            document.getElementById('backgroundColor').style.border = '0px'
+            document.getElementById('backgroundColor').style.opacity = '.9'
+            document.body.style.backgroundColor = 'transparent'
+            overwolf.windows.changeSize('BuildLockedIn', 400, 400)
+
+            canClickThroughWindow = true
           } else {
             overwolf.windows.removeWindowStyle('BuildLockedIn', 'InputPassThrough', function(status) {
               console.log(status)
-              canClickThroughWindow = false
             })
+            document.getElementById('removedwhenlockedin1').style.display = ''
+            document.getElementById('removedwhenlockedin2').style.display = 'flex'
+            overwolf.windows.changeSize('BuildLockedIn', 400, 500)
+            document.getElementById('backgroundColor').style.height = '100%'
+            document.getElementById('backgroundColor').style.width = '99%'
+            document.getElementById('backgroundColor').style.opacity = '1'
+            document.getElementById('backgroundColor').style.border = '2px solid rgb(255, 255, 255)'
+            document.getElementById('backgroundColor').style.opacity = '1'
+            document.body.style.backgroundColor = 'rgb(24, 0, 0)'
+            canClickThroughWindow = false
           }
-          // overwolf.windows.obtainDeclaredWindow('BuildLockedIn', function(currentWindow) {
-          //   console.log(currentWindow)
-          // })
         })
 
         var hidden = false

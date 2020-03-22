@@ -112,14 +112,6 @@
         "size": {
           "width": 400,
           "height": 500
-        },
-        "min_size": {
-          "width": 200,
-          "height": 300
-        },
-        "max_size": {
-          "width": 600,
-          "height": 700
         }
       },
       "notification": {
