@@ -47,8 +47,7 @@ div.ad
   div.textbox {
     background-color: ${build.racecolor};
     border: 2px solid rgb(255, 255, 255);
-    opacity: 0.8;
-    filter: alpha(opacity=80); /* For IE8 and earlier */
+    opacity: 1;
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 20px;
