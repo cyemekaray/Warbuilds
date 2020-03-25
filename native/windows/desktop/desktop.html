@@ -20,21 +20,15 @@
             <use xlink:href="/img/header_icons.svg#window-control_support" />
           </svg>
           <div class="tooltip">
-            <a target="_blank" href="https://discord.gg/krmTkP">Join our Discord</a><br />
-            <a target="_blank" href="http://www.clanat.org/">Visit our Website</a><br />
-            <a target="_blank" href="https://www.clanat.org/forum/warbuilds-bugs-feedback">Bug Reports + Feedback</a>
+            <a href="" id="discordlink">Join our Discord</a><br />
+            <a href="" id="websitelink">Visit our Website</a><br />
+            <a href="" id="feedbacklink">Bug Reports + Feedback</a>
             <hr />
             <h3>Social Media</h3>
             <div class="socialIcons">
-              <a target="_blank" href="https://twitter.com/theoverwolf">
-                <img src="../../img/twitter.svg" />
-              </a>
-              <a target="_blank" href="https://www.facebook.com/Overwolf/">
-                <img src="../../img/facebook.svg" />
-              </a>
-              <a target="_blank" href="https://www.reddit.com/r/Overwolf/">
-                <img src="../../img/reddit.png" />
-              </a>
+              <a href="" id="twittericon"><img src="../../img/twitter.svg"/></a>
+              <a href="" id="facebookicon"><img src="../../img/facebook.svg"/></a>
+              <a href="" id="redditicon"><img src="../../img/reddit.png"/></a>
             </div>
           </div>
         </button>
@@ -130,6 +124,26 @@
       })
     </script>
     <script src="http://content.overwolf.com/libs/ads/latest/owads.min.js" async onload="onOwAdReady()"></script>
+    <script>
+      document.getElementById('twittericon').onclick = function() {
+        overwolf.utils.openUrlInDefaultBrowser('https://twitter.com/theoverwolf')
+      }
+      document.getElementById('facebookicon').onclick = function() {
+        overwolf.utils.openUrlInDefaultBrowser('https://www.facebook.com/Overwolf/')
+      }
+      document.getElementById('redditicon').onclick = function() {
+        overwolf.utils.openUrlInDefaultBrowser('https://www.reddit.com/r/Overwolf/')
+      }
+      document.getElementById('discordlink').onclick = function() {
+        overwolf.utils.openUrlInDefaultBrowser('https://discord.gg/XfwWVzh')
+      }
+      document.getElementById('websitelink').onclick = function() {
+        overwolf.utils.openUrlInDefaultBrowser('http://www.clanat.org/')
+      }
+      document.getElementById('feedbacklink').onclick = function() {
+        overwolf.utils.openUrlInDefaultBrowser('https://www.clanat.org/forum/warbuilds-bugs-feedback')
+      }
+    </script>
     <script>
       function onOwAdReady() {
         const owAd = new OwAd(document.getElementById('ad'))
