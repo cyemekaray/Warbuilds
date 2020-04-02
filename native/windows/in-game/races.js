@@ -475,7 +475,7 @@ define({
       ],
       Analysis: '',
       Variations: [
-        'Naga Sea Witch instead of Firelord opener (<a href="https://warcraft3.info/articles/116/">Link to WC3 Info Article</a>) works great if enemy chose Demon Hunter since Naga can still frost arrow with low mana',
+        'Naga Sea Witch instead of Firelord opener (<a target="_blank" href="https://warcraft3.info/articles/116/">Link to WC3 Info Article</a>) works great if enemy chose Demon Hunter since Naga can still frost arrow with low mana',
         'Go Bloodmage and build the towers behind the enemy base inside the trees, using Flamestrike to carve out space in the trees. Use a footman to bait his hero to the side of his base where he is most likely to creep and make him chase your foot as much as you can. This is all a diversion because your militia are about to tower on the right side behind the trees on the other side of his base unseen to him.',
         'Open with Firelord or Tinker, creep to level three, then pick up the other hero at Tier 2 and do the tower push then.',
       ],

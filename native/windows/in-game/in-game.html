@@ -87,6 +87,26 @@
       .dataTables_scrollHeadInner table {
         width: 1200px !important;
       }
+
+      /* unvisited link */
+      a:link {
+        color: gray;
+      }
+
+      /* visited link */
+      a:visited {
+        color: gray;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: white;
+      }
+
+      /* selected link */
+      a:active {
+        color: white;
+      }
     </style>
   </head>
 
@@ -102,7 +122,7 @@
       </h1>
       <div class="window-controls-group">
         <button class="icon window-control support">
-          <svg>
+          <svg class="icon2">
             <use xlink:href="/img/header_icons.svg#window-control_support" />
           </svg>
           <div class="tooltip">
