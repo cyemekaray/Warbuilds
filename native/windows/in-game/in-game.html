@@ -25,6 +25,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        color: white;
       }
 
       tfoot input {
@@ -149,7 +150,7 @@
           <h1>
             <img src="../../img/humanlogo.png" id="humanicon" class="greyscale glow" />&nbsp;&nbsp;&nbsp;&nbsp;
             <img src="../../img/orclogo.png" id="orcicon" class="greyscale" />&nbsp;&nbsp;&nbsp;&nbsp;
-            <font class="color"><u>BUILD ORDERS</u></font
+            <font color="gold"><u>BUILD ORDERS</u></font
             >&nbsp;&nbsp;&nbsp;&nbsp;
             <img src="../../img/undeadlogo.png" id="undeadicon" class="greyscale" />&nbsp;&nbsp;&nbsp;&nbsp;
             <img src="../../img/elflogo.png" id="nightelficon" class="greyscale" />&nbsp;&nbsp;&nbsp;&nbsp;
@@ -173,14 +174,20 @@
           <thead>
             <tr>
               <th class="th-sm" width="13%" align="left">
-                <h2><center class="color">TAGS</center></h2>
+                <h2>
+                  <font color="gold"><center>TAGS</center></font>
+                </h2>
               </th>
               <th class="th-sm" width="17%" align="left">
-                <h2><center class="color">NAME</center></h2>
+                <h2>
+                  <font color="gold"><center>NAME</center></font>
+                </h2>
               </th>
 
               <th class="th-sm" width="50%" align="left">
-                <h2><center class="color">DESCRIPTION</center></h2>
+                <h2>
+                  <font color="gold"> <center>DESCRIPTION</center></font>
+                </h2>
               </th>
             </tr>
           </thead>
@@ -288,7 +295,7 @@
             document.getElementById(`${page}icon`).classList.add('glow')
             filltable(page)
 
-            const racecolor = { human: '#87CEFA', orc: '#fa989e', undead: '#c8b7e8', nightelf: '#bfffbf' }[page]
+            const racecolor = { human: '#002aa6', orc: '#b70200', undead: 'blueviolet', nightelf: '#178c01' }[page]
             document.getElementById('tempstyle').innerHTML = `
               <style>
                 .color {
@@ -296,9 +303,9 @@
                 }
 
                 .glow {
-                  box-shadow: 0px 0px 10px ${racecolor};
+                  box-shadow: 0px 0px 30px ${racecolor};
                   filter:none !important;
-                  border-radius: 15px;
+                  border-radius: 25px;
                 }
               </style>
             `

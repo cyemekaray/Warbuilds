@@ -47,11 +47,6 @@
         "title": "Lock In",
         "action-type": "custom",
         "default": "F5"
-      },
-      "showhidelockedin": {
-        "title": "Show/Hide Locked In Window",
-        "action-type": "custom",
-        "default": "F7"
       }
     },
     "game_events": [21638],

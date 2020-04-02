@@ -41,11 +41,12 @@ text-transform: uppercase;
 
 div.ad
 {
-  background-color: ${build.racecolor};
+  background-color: #2f3130;
 }
 
   div.textbox {
-    background-color: ${build.racecolor};
+    background-color: #2f3130;
+    color: white !important;
     border: 2px solid rgb(255, 255, 255);
     opacity: 1;
     padding-top: 10px;
@@ -117,14 +118,13 @@ div.ad
   div.textbox p {
     font: Helvetica;
     font-weight: normal;
-    color: #000000;
+    color: white;
   }
 
   div.vodbox {
-    background-color: ${build.racecolor};
+    background-color: #2f3130;
     border: 2px solid rgb(255, 255, 255);
-    opacity: 0.8;
-    filter: alpha(opacity=80); /* For IE8 and earlier */
+    opacity: 1;
     height: 180px;
     max-width: 400px;
     width: 400px;
@@ -138,7 +138,7 @@ div.ad
   div.vodbox p {
     font: Helvetica;
     font-weight: normal;
-    color: #000000;
+    color: white;
     text-align: center;
   }
 
@@ -196,7 +196,6 @@ div.ad
   }
 
   table.buildordertable th {
-
     color: #edd00f;
   }
 
@@ -274,7 +273,7 @@ div.ad
     <div class="UpperTitle">
         <h1 class="uppercase">
         <a href="../in-game/in-game.html"><img class="leftimage" style="vertical-align:middle" src="../../img/BackButton.png"/></a>
-        <font color="${build.racecolor}"><u>${name}</u></font>
+        <font color="#edd00f"><u>${name}</u></font>
         <img class="rightimage" style="vertical-align:middle" src="../../img/StartGameButton.png" id="StartGameButton"></h1>
         <br> 
     </div>
@@ -288,11 +287,11 @@ div.ad
     <div class="textbox">
     <div class="technicalName">
     <center><h2>
-    <font color="black" size="5"><u>${build.TechnicalName}</u></font></center>
+    <font color="#edd00f" size="5"><u>${build.TechnicalName}</u></font></center>
     </div>
   </h2>  
   <div class="whenStratIsBest">
-    <h2><font color="black" size="4"><u>WHEN THIS STRATEGY IS BEST:</u></font></h2>
+    <h2><font size="4"><u>WHEN THIS STRATEGY IS BEST:</u></font></h2>
       <ul style="margin-top: 2px; margin-bottom: 3px">
         <li><b>Gametype:</b> ${build.WhenToUseGametypes}</li>  
         <li><b>Enemy Race:</b> ${build.WhenToUseEnemyRaces}</li>
@@ -302,7 +301,7 @@ div.ad
       </div>
       <div class="buildDescription">
       <h2>
-        <font color="black" size="4"><u>DETAILED EXPLANATION + BUILD ORDER:</u></font>
+        <font size="4"><u>DETAILED EXPLANATION + BUILD ORDER:</u></font>
       </h2>
 <div  style="margin-top: 5px; text-indent: 50px" ;>
        ${searchforimage(build.Description)}
@@ -346,7 +345,7 @@ div.ad
 
       <div class="analysisSection">
       <h2>
-        <left>      <font color="black" size="4"><u><br><br>ANALYSIS:</u></font></left>
+        <left>      <font size="4"><u><br><br>ANALYSIS:</u></font></left>
       </h2>
       <table class="prosandconstable">
       <tr>
@@ -369,7 +368,7 @@ div.ad
       </div>
       <div style="margin-top: 7px; margin-bottom: 0px">
       <h2>
-        <font color="black" size="4"><u>VARIATIONS:</u></font>
+        <font size="4"><u>VARIATIONS:</u></font>
       </h2>
       </div>
       <ul style="margin-top: 2px; margin-bottom: 3px">
@@ -379,9 +378,9 @@ div.ad
       `
       ).join('')}
       </ul>
-      <h2><font color="black" size="4"><a href="${
+      <h2><font size="4"><a href="${
         build.DiscussionLink
-      }"  target="_blank">Discussion Thread (Opens in New Window)</a></font></h2>
+      }" style="color:gold" target="_blank">Discussion Thread (Opens in New Window)</a></font></h2>
     </div>
     <div class="rightsidecontainer">
       <div class="vodbox">
@@ -399,7 +398,7 @@ div.ad
             style="vertical-align:middle"
             frameborder="0">
         </iframe></left>
-          <h3><font color="black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Pro Replay</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Clan AT Tutorial</b></font></h3>
+          <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Pro Replay</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Clan AT Tutorial</b></h3>
          </div>
       <div class="ad" id="ad">
         <br />

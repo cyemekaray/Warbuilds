@@ -15,7 +15,7 @@
         display: none;
       }
       body {
-        background-color: rgb(24, 0, 0);
+        background-color: rgb(5, 0, 0);
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -38,7 +38,7 @@
 
       div.outerbox {
         border: 2px solid rgb(255, 255, 255);
-        opacity: 0.8;
+        opacity: 1;
         padding-top: 2px;
         padding-bottom: 5px;
         height: 100%;
@@ -79,7 +79,7 @@
         padding-left: 5px;
         padding-right: 10px;
         padding-top: 3px;
-        color: black;
+        color: white;
         margin: 0px;
       }
 
@@ -89,7 +89,7 @@
       }
 
       table.buildordertable tr.highlighted {
-        background-color: white;
+        background-color: black;
       }
 
       .app-header {
@@ -135,7 +135,7 @@
     <header class="app-header" id="removedwhenlockedin1">
       <img src="../../img/header_icon.png" />
       <h1>Warbuilds</h1>
-      <h1 style="margin: auto;">Show/Hide:&nbsp;<span id="showandhide">F7</span></h1>
+      <h1 style="margin: auto;">Show/Hide:&nbsp;<span id="showandhide">Ctrl + F</span></h1>
       <div class="window-controls-group">
         <button class="icon window-control support">
           <svg>
@@ -186,7 +186,9 @@
           <img class="backButton" src="../../img/backarrow.png" id="BackToDetailedViewButton" />
         </div>
         <div class="UpperTitle" style="flex:1">
-          <h3><b id="buildName"></b></h3>
+          <h3>
+            <font color="white"><b id="buildName"></b></font>
+          </h3>
         </div>
       </div>
       <!-- <hr id="removedwhenlockedin3" /> -->
@@ -195,11 +197,11 @@
           <div style="flex-grow: 1; align-self: center; justify-content: flex-start">
             <center>
               <img class="align-self" style="vertical-align: middle" src="../../img/EtcIcons/woodicon.png" />
-              <font color="black" size="3">&nbsp;=&nbsp;<b id="woodCount"></b></font>
+              <font color="white" size="3">&nbsp;=&nbsp;<b id="woodCount"></b></font>
             </center>
           </div>
 
-          <div style="flex-grow: 1; align-self: center; justify-content: center">
+          <div style="flex-grow: 1; align-self: center; justify-content: center; color:white">
             <center>
               <b>Timer:&nbsp;</b><span id="currentTime">0:00</span>&nbsp;<br /><b id="startbutton">Start/Pause:</b>
               <span id="startpauseHotkey">F6</span>&nbsp;<br /><b id="resetbutton">Reset:</b>&nbsp;<span
@@ -296,7 +298,6 @@
         )
         $('#buildName')
           .html(build.Name)
-          .css('color', build.racecolor)
           .css('darkcolor', build.racedarkcolor)
         $('#woodCount').html(build.WoodWorkerCount)
         $('#backgroundColor').css('background-color', build.racecolor)
@@ -376,7 +377,7 @@
             document.getElementById('backgroundColor').style.height = '390px'
             document.getElementById('backgroundColor').style.width = '100%'
             document.getElementById('backgroundColor').style.border = '0px'
-            document.getElementById('backgroundColor').style.opacity = '.9'
+            document.getElementById('backgroundColor').style.opacity = '.85'
             document.body.style.backgroundColor = 'transparent'
             overwolf.windows.changeSize('BuildLockedIn', 400, 400)
 
@@ -399,7 +400,7 @@
         })
 
         var hidden = false
-        overwolf.settings.registerHotKey('showhidelockedin', function(result) {
+        overwolf.settings.registerHotKey('sample_app_showhide', function(result) {
           if (!hidden) {
             overwolf.windows.hide('BuildLockedIn')
             hidden = true
@@ -409,7 +410,7 @@
           }
         })
 
-        overwolf.settings.getHotKey('showhidelockedin', function(result1) {
+        overwolf.settings.getHotKey('sample_app_showhide', function(result1) {
           $('#showandhide').html(result1.hotkey)
           console.log(result1.hotkey)
         })

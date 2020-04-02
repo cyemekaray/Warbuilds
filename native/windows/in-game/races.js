@@ -142,7 +142,7 @@ define({
       WhenToUseEnemyRaces: 'Any',
       WhenToUseMaps: 'Safer on larger maps with accessible natural expansions. In solo good on EI, LR, TS.',
       WhenToUseOther: 'If the enemy is fast teching, low aggro, and tends to not scout well.',
-      WoodWorkerCount: '8-10+ as needed',
+      WoodWorkerCount: '8-10+',
       BuildTable: [
         ['6/12 Food', '0:01', '4 Peasants to gold. 1 build Altar. Train Peasants'],
         [
@@ -685,7 +685,7 @@ define({
 
     {
       Tags: ['#Creep/Counter'],
-      Name: "ToD's Best Strategy against Orc",
+      Name: "ToD's Best Strategy Against Orc",
       TechnicalName: 'AM 1 Base Quick Tech Mass Casters',
       HeroIcons: ['../../img/HeroIcons/Archmage.png'],
       UnitIcons: [
@@ -2265,7 +2265,7 @@ define({
         '../../img/UnitIcons/Destroyer.png',
       ],
       Description:
-        "If you were only going to play one Undead build for the rest of time and you wanted to win as much as possible, this build wouldnt be a bad choice. Hey, just ask Happy, it's pretty much all he plays (with minor variations). Open with Death Knight and do a Skeleton Rod harass. Steal creeps with Death Coil. Creep with Crypt Fiends. Grab a Lich and Obsidian Statue tier 2. Tier 3 get an Orb of Corruption, Dark Ranger, and Destroyers. Kite like your life depends on it. Deny enemy expansions. Nuke stuff. Enjoy your WCG trophies.",
+        "If you were only going to play one Undead build for the rest of time and you wanted to win as much as possible, this build wouldn't be a bad choice. Hey, just ask Happy, it's pretty much all he plays (with some variation). Open with Death Knight and do a Skeleton Rod harass. Steal creeps with Death Coil. Creep with Crypt Fiends. Grab a Lich and Obsidian Statue tier 2. Tier 3 get an Orb of Corruption, Dark Ranger, and Destroyers. Kite like your life depends on it. Deny enemy expansions. Nuke stuff. Enjoy your WCG trophies.",
       WhenToUseGametypes: 'Any, but designed for solo',
       WhenToUseEnemyRaces: 'Any, but weaker against Orc',
       WhenToUseMaps: "Veto Echo Isles and Amazonia. Maps where it's hard to expand are best.",
@@ -2274,7 +2274,7 @@ define({
       BuildTable: [
         ['6/10 Food', '0:01', 'Train 2 Acolytes. Build Altar & 1st Ziggurat same time'],
         ['7/10 Food + 200 Gold', '0:30', 'Build Crypt => 6th Acolyte (scout ASAP)'],
-        ['8/10 Food', '0:54', 'Builds Tomb of Relics'],
+        ['8/10 Food', '0:54', 'Build Tomb of Relics'],
         ['8/20 Food + Altar Finish', '1:06', 'Train Death Knight'],
         ['13/20 Food + 215 Gold', '1:16', 'Build Graveyard => Train 2nd and 3rd Ghoul'],
         ['17/20 Food + DK Finish', '2:08', 'Buy Rod => Go Harass. Creep during downtime.'],
@@ -2314,7 +2314,7 @@ define({
       Variations: [
         'For slightly later hero but faster Ghouls: build Crypt and Altar first simultaneously, then Ziggurat after',
         'Build Lich as soon as you hit Tier 2 before anything else, for strongest Tier 2 powerspike (good vs Orc (Blademaster -- Frost Armor), T1 massers, or in team games). You can swap the order you build Lich and Slaughterhouse depending on if you need the Frost Nova powerspike or the Obsidian Statue sustain + Destroyer timing',
-        'Add Abominations or Frost Wyrms at tier 3',
+        'Add Abominations or Frost Wyrms at tier 3. Happy highly prefers abominations over wyrms.',
         'Swap Naga Sea Witch for Lich (for more immediate t2 pressure), or swap Pit Lord for Dark Ranger (vs. Orc or proto players)',
         "You can build an earlier Nerubian tower before you tech, or later, or not at all. If you're going to bother building one at all though, it better be before Tier 2",
         "You can buy a second, or even third Rod of Necromancy as needed. Don't buy them any more once you have a Dark Ranger though, since she can produce skeletons for you.",
@@ -2328,6 +2328,7 @@ define({
         "If you don't know your opponent's race or playstyle, this is a safe and versatile build.",
         'Avoid major fights until Destro upgrade and Orb of Corruption',
         'Conserve Mana',
+        'You can use your 6th Acolyte to build an aggressive shop as he comes out of the base to save some time. For a more defensive setup, the shop goes in the back',
       ],
     },
 

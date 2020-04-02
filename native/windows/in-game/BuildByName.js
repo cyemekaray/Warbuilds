@@ -6,8 +6,8 @@ define(['./races.js'], races => {
         (buildbyname[build.Name] = {
           ...build,
           race,
-          racecolor: { human: '#87CEFA', orc: '#fa989e', undead: '#c8b7e8', nightelf: '#bfffbf' }[race],
-          racedarkcolor: { human: 'darkblue', orc: 'darkred', undead: 'indigo', nightelf: 'darkgreen' }[race],
+          racecolor: { human: '#2f3130', orc: '#2f3130', undead: '#2f3130', nightelf: '#2f3130' }[race],
+          racedarkcolor: { human: '#252420', orc: '#252420', undead: '#252420', nightelf: '#252420' }[race],
         })
     )
   )
