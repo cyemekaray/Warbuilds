@@ -3043,6 +3043,7 @@ define({
         'High Level Shadowhunter (Serpent Wards) is your nemesis. Shut him down early.',
       ],
     },
+
     {
       Tags: ['#Beginner', '#Cheese'],
       Name: 'Mother of Dragons',
@@ -3050,7 +3051,7 @@ define({
       HeroIcons: ['../../img/HeroIcons/Priestess Of The Moon.png'],
       UnitIcons: ['../../img/UnitIcons/Faerie Dragon.png', '../../img/UnitIcons/Hippogryph Rider.png', '../../img/UnitIcons/Chimaera.png'],
       Description:
-        "For 윤소윤~ This is a fast tech build to get Chimeras out as quickly as possible and slaughter the enemy's low tier forces.",
+        "For Yoonie~ This is a fast tech build to get Chimeras out as quickly as possible and slaughter the enemy's low tier forces.",
       WhenToUseGametypes: 'Any, but best in 4v4 RT',
       WhenToUseEnemyRaces: 'Orc',
       WhenToUseMaps: 'Large maps with plenty of breathing room to tech',
@@ -3085,6 +3086,7 @@ define({
         '',
       ],
     },
+    
     {
       Tags: ['#Economy'],
       Name: 'Keeper of the Gold',
