@@ -16,19 +16,19 @@
   "data": {
     "game_targeting": {
       "type": "dedicated",
-      "game_ids": [21638]
+      "game_ids": [21638, 216381]
     },
     "launch_events": [
       {
         "event": "GameLaunch",
         "event_data": {
-          "game_ids": [21638]
+          "game_ids": [21638, 216381]
         },
         "start_minimized": true
       }
     ],
     "hotkeys": {
-      "sample_app_showhide": {
+      "app_showhide": {
         "title": "Show/Hide In-Game Window",
         "action-type": "toggle",
         "default": "Ctrl+F"
@@ -49,7 +49,7 @@
         "default": "F5"
       }
     },
-    "game_events": [21638],
+    "game_events": [21638, 216381],
     "start_window": "background",
     "windows": {
       "background": {
@@ -80,7 +80,7 @@
         "file": "windows/in-game/in-game.html",
         "in_game_only": true,
         "focus_game_takeover": "ReleaseOnHidden",
-        "focus_game_takeover_release_hotkey": "sample_app_showhide",
+        "focus_game_takeover_release_hotkey": "app_showhide",
         "transparent": true,
         "resizable": false,
         "size": {
@@ -100,7 +100,7 @@
         "file": "windows/in-game/BuildLockedIn.html",
         "in_game_only": true,
         "focus_game_takeover": "ReleaseOnHidden",
-        "focus_game_takeover_release_hotkey": "sample_app_showhide",
+        "focus_game_takeover_release_hotkey": "lockedin_showhide",
         "transparent": true,
         "resizable": true,
         "disable_rightclick": true,

@@ -5,17 +5,46 @@ define(['../constants/hotkeys-ids.js'], function(HOTKEYS) {
    * @param callback
    * @private
    */
-  function _getHotkey(hotkeyId, callback) {
-    overwolf.settings.getHotKey(hotkeyId, function(result) {
-      if (!result || result.status === 'error' || !result.hotkey) {
-        setTimeout(function() {
-          _getHotkey(hotkeyId, callback)
-        }, 2000)
-      } else {
-        callback(result.hotkey)
-      }
-    })
-  }
+
+
+  // function _getHotkey(hotkeyId, callback) {
+  //   overwolf.settings.hotkeys.get(hotkeyId, function(result) {
+  //     if (!result || result.status === 'error' || !result.hotkey) {
+  //       setTimeout(function() {
+  //         _getHotkey(hotkeyId, callback)
+  //       }, 2000)
+  //     } else {
+  //       callback(result.hotkey)
+  //     }
+  //   })
+  // }
+
+function _getHotkey(hotkeyId, gameId, callback) {
+		overwolf.settings.hotkeys.get(result => {
+			if (result && result.success) {
+				if (
+					result.games &&
+					result.games[gameId] &&
+					result.games[gameId].length
+				) {
+					const hotkey = result.games[gameId].find(hotkey => {
+						return (hotkey.name === hotkeyId);
+					});
+
+					if (hotkey) {
+						callback(hotkey.binding);
+						return;
+					}
+				}
+
+				// callback(null);
+			} else {
+				setTimeout(() => this._getHotkey(hotkeyId, gameId, callback), 2000);
+			}
+		});
+	}
+
+
 
   /**
    * set custom action for a hotkey id
@@ -24,7 +53,7 @@ define(['../constants/hotkeys-ids.js'], function(HOTKEYS) {
    * @private
    */
   function _setHotkey(hotkeyId, action) {
-    overwolf.settings.registerHotKey(hotkeyId, function(result) {
+    overwolf.settings.hotkeys.onPressed.addListener(hotkeyId, function(result) {
       if (result.status === 'success') {
         action()
       } else {
@@ -46,7 +75,8 @@ define(['../constants/hotkeys-ids.js'], function(HOTKEYS) {
   }
 
   function addHotkeyChangeListener(listener) {
-    overwolf.settings.OnHotKeyChanged.addListener(listener)
+    overwolf.settings.hotkeys.onChanged.addListener(listener)
+    
   }
 
   return {

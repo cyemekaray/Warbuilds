@@ -316,18 +316,21 @@
           }
           return `${minutes}:${seconds}`
         }
-        overwolf.settings.registerHotKey('start_pause', function(result) {
+        
+        overwolf.settings.hotkeys.onPressed.addListener(async (response14) => {
+    if (response14.name === "start_pause") {
           if (!isRunning) {
             intervalID = setInterval(() => {
               elapsed++
               $('#currentTime').html(prettyTime(elapsed))
               calcSelectedRow()
+              console.log(result)
             }, 1000)
           } else {
             clearInterval(intervalID)
           }
           isRunning = !isRunning
-        })
+        }})
 
         document.getElementById('scrollerdiv').scrollBy({
           top: 10,
@@ -355,8 +358,8 @@
             }
           }
         }
-
-        overwolf.settings.registerHotKey('reset', function(result) {
+        overwolf.settings.hotkeys.onPressed.addListener(async (response1) => {
+    if (response1.name === "reset") {
           elapsed = 0
           $('#currentTime').html(prettyTime(elapsed))
           ;[...$('tbody tr')].forEach(el => (el.className = ''))
@@ -364,9 +367,10 @@
           document.getElementById('scrollerdiv').scrollTo({
             top: 10,
           })
-        })
+        }})
         var canClickThroughWindow = false
-        overwolf.settings.registerHotKey('lockin', function(result) {
+        overwolf.settings.hotkeys.onPressed.addListener(async (response7) => {
+    if (response7.name === "lockin") {
           if (canClickThroughWindow === false) {
             overwolf.windows.setWindowStyle('BuildLockedIn', 'InputPassThrough', function(status) {
               console.log(status)
@@ -396,39 +400,19 @@
             document.getElementById('backgroundColor').style.opacity = '1'
             document.body.style.backgroundColor = '#191917'
             canClickThroughWindow = false
-          }
+          }}
         })
-
-        var hidden = false
-        overwolf.settings.registerHotKey('sample_app_showhide', function(result) {
-          if (!hidden) {
+        hidden123 = false
+        overwolf.settings.hotkeys.onPressed.addListener(async (response5) => {
+    if (response5.name === "app_showhide") {
+          if (!hidden123) {
             overwolf.windows.hide('BuildLockedIn')
-            hidden = true
+            hidden123 = true
           } else {
             overwolf.windows.restore('BuildLockedIn')
-            hidden = false
+            hidden123 = false
           }
-        })
-
-        overwolf.settings.getHotKey('sample_app_showhide', function(result1) {
-          $('#showandhide').html(result1.hotkey)
-          console.log(result1.hotkey)
-        })
-
-        overwolf.settings.getHotKey('start_pause', function(result2) {
-          $('#startpauseHotkey').html(result2.hotkey)
-          console.log(result2.hotkey)
-        })
-
-        overwolf.settings.getHotKey('reset', function(result3) {
-          $('#resetHotkey').html(result3.hotkey)
-          console.log(result3.hotkey)
-        })
-
-        overwolf.settings.getHotKey('lockin', function(result4) {
-          $('#lockinHotkey').html(result4.hotkey)
-          console.log(result4.hotkey)
-        })
+        }})
       })
     </script>
 
@@ -438,28 +422,6 @@
         style = window.getComputedStyle(txt, null).getPropertyValue('font-size')
         currentSize = parseFloat(style)
         txt.style.fontSize = currentSize + increaseFactor + 'px'
-      }
-    </script>
-
-    <script src="http://content.overwolf.com/libs/ads/latest/owads.min.js" async onload="onOwAdReady()"></script>
-    <script>
-      function onOwAdReady() {
-        const owAd = new OwAd(document.getElementById('ad'))
-        function onWindowStateChanged(state) {
-          if (state && state.window_name === 'in_game') {
-            // when state changes to minimized, call removeAd()
-            if (state.window_state === 'minimized') {
-              owAd.removeAd()
-            }
-            // when state changes from minimized to normal, call refreshAd()
-            else if (state.window_previous_state === 'minimized' && state.window_state === 'normal') {
-              owAd.refreshAd()
-            }
-          }
-        }
-
-        overwolf.windows.onStateChanged.removeListener(onWindowStateChanged)
-        overwolf.windows.onStateChanged.addListener(onWindowStateChanged)
       }
     </script>
   </body>

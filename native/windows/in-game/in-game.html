@@ -117,7 +117,7 @@
       <img src="../../img/header_icon.png" />
       <h1>Warbuilds In-Game App</h1>
       <h1 style="margin: auto;">
-        Show/Hide Hotkey:
+        Show/Hide Hotkey: Ctrl + F
         <span id="hotkey" style="font-weight: bold; color: white;"></span>
       </h1>
       <div class="window-controls-group">
@@ -299,9 +299,8 @@
 
                 document.getElementById('StartGameButton').onclick = function() {
                   overwolf.windows.obtainDeclaredWindow('BuildLockedIn', function(newwindow) {
-                    console.log(newwindow)
                     overwolf.windows.restore('BuildLockedIn')
-                    overwolf.windows.hide('in_game')
+                    overwolf.windows.close('in_game')
                     overwolf.windows.getMainWindow().currentBuild = buildrow.getAttribute('name')
                   })
                 }
@@ -341,8 +340,22 @@
         inGameController.run()
       }, function(error) {
         console.log(`[INIT] failed to load in-game module ${error}`)
-      })
+      }
+      
+      )
     </script>
-   
+   <script>
+       hidden = false
+        overwolf.settings.hotkeys.onPressed.addListener(async (response66) => {
+    if (response66.name === "app_showhide") {
+          if (!hidden) {
+            overwolf.windows.hide('in_game')
+            hidden = true
+          } else {
+            overwolf.windows.restore('in_game')
+            hidden = false
+          }
+        }})
+   </script>
   </body>
 </html>

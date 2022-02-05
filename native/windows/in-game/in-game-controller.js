@@ -10,10 +10,6 @@ define([
 
     constructor() {
       this.inGameView = new InGameView();
-
-      this._gameEventHandler = this._gameEventHandler.bind(this);
-      this._infoUpdateHandler = this._infoUpdateHandler.bind(this);
-      this._eventListener = this._eventListener.bind(this);
       this._updateHotkey = this._updateHotkey.bind(this);
     }
 
@@ -36,7 +32,6 @@ define([
     _eventListener(eventName, data) {
       switch (eventName) {
         case 'event': {
-          this._gameEventHandler(data);
           break;
         }
         case 'info': {
@@ -45,26 +40,6 @@ define([
         }
       }
     }
-
-    // Logs events
-    _gameEventHandler(event) {
-      let isHightlight = false;
-      switch (event.name) {
-        case 'kill':
-        case 'death':
-        case 'matchStart':
-        case 'matchEnd':
-          isHightlight = true;
-      }
-      this.inGameView.logEvent(JSON.stringify(event), isHightlight);
-    }
-
-    // Logs info updates
-    _infoUpdateHandler(infoUpdate) {
-      this.inGameView.logInfoUpdate(JSON.stringify(infoUpdate), false);
-    }
   }
-
-
   return InGameController;
 });
