@@ -343,26 +343,6 @@
         console.log(`[INIT] failed to load in-game module ${error}`)
       })
     </script>
-    <script src="http://content.overwolf.com/libs/ads/latest/owads.min.js" async onload="onOwAdReady()"></script>
-    <script>
-      function onOwAdReady() {
-        const owAd = new OwAd(document.getElementById('ad'))
-        function onWindowStateChanged(state) {
-          if (state && state.window_name === 'in_game') {
-            // when state changes to minimized, call removeAd()
-            if (state.window_state === 'minimized') {
-              owAd.removeAd()
-            }
-            // when state changes from minimized to normal, call refreshAd()
-            else if (state.window_previous_state === 'minimized' && state.window_state === 'normal') {
-              owAd.refreshAd()
-            }
-          }
-        }
-
-        overwolf.windows.onStateChanged.removeListener(onWindowStateChanged)
-        overwolf.windows.onStateChanged.addListener(onWindowStateChanged)
-      }
-    </script>
+   
   </body>
 </html>
