@@ -3,9 +3,9 @@
   "type": "WebApp",
   "meta": {
     "name": "Warbuilds",
-    "version": "1.1.6",
+    "version": "1.1.8",
     "minimum-overwolf-version": "0.120.0",
-    "author": "Clan AT",
+    "author": "Cy",
     "icon": "IconMouseOver.png",
     "icon_gray": "IconMouseNormal.png",
     "launcher_icon": "launcher_icon.ico",

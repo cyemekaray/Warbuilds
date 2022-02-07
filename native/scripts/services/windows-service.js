@@ -107,13 +107,13 @@ define([
 
   /**
    * change window size by window id
-   * @param windowId
+   * @param window_id
    * @returns {Promise<any>}
    */
-  function changeSize(windowId, width, height) {
+  function changeSize(window_id, width, height, auto_dpi_resize) {
     return new Promise(async (resolve, reject) => {
       try {
-        overwolf.windows.changeSize(windowId, width, height, (result) => {
+        overwolf.windows.changeSize({window_id, width, height, auto_dpi_resize}, (result) => {
           if (result.status === 'success') {
             resolve();
           } else {

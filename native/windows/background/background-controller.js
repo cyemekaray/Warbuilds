@@ -3,10 +3,9 @@ define([
   '../../scripts/services/running-game-service.js',
   '../../scripts/services/windows-service.js',
   '../../scripts/services/hotkeys-service.js',
-  '../../scripts/services/gep-service.js',
   '../../scripts/services/event-bus.js',
   '../../scripts/constants/notifications.js',
-], function(WindowNames, runningGameService, WindowsService, hotkeysService, gepService, eventBus, Notifications) {
+], function(WindowNames, runningGameService, WindowsService, hotkeysService, eventBus, Notifications) {
   class BackgroundController {
     static async run() {
       // this will be available when calling overwolf.windows.getMainWindow()
@@ -23,7 +22,56 @@ define([
 
       // Switch between desktop/in-game windows when launching/closing game
       runningGameService.addGameRunningChangedListener(BackgroundController._onRunningGameChanged)
+
+    // Register handlers to hotkey events
+    this._registerHotkeys();
+
+    await this._restoreLaunchWindow();
+
+    overwolf.extensions.onAppLaunchTriggered.addListener(e => {
+      if (e && e.source !== 'gamelaunchevent') {
+        this._restoreAppWindow();
+      }
+    });
+
     }
+
+  /**
+   * Open the relevant window on app launch
+   * @private
+   */
+   async _restoreLaunchWindow() {
+    const gameInfo = await this.runningGameService.getRunningGameInfo();
+
+    if (!gameInfo || !gameInfo.isRunning) {
+      await WindowsService.restore(kWindowNames.DESKTOP);
+      return;
+    }
+
+    if (!kGameClassIds.includes(gameInfo.classId)) {
+      return;
+    }
+
+    // If app was not launched automatically, restore the a relevant game window
+    if (!BackgroundController._launchedWithGameEvent()) {
+      await this._restoreGameWindow();
+    }
+  }
+
+  /**
+   * Open the relevant window on user request
+   * @private
+   */
+  async _restoreAppWindow() {
+    const isGameRunning = await this.runningGameService.isGameRunning();
+
+    if (isGameRunning) {
+      await this._restoreGameWindow();
+    } else {
+      await WindowsService.restore(kWindowNames.DESKTOP);
+    }
+  }
+
 
     /**
      * Minimize all app windows
@@ -42,8 +90,6 @@ define([
      */
     static async _onRunningGameChanged(isGameRunning) {
       if (isGameRunning) {
-        // Register to game events
-        gepService.registerToGEP(BackgroundController.onGameEvents, BackgroundController.onInfoUpdate)
         // Open in-game window
         await WindowsService.restore(WindowNames.IN_GAME)
         // Close desktop window
@@ -65,11 +111,11 @@ define([
       // Desktop:
       const desktopWindowName = await WindowsService.getStartupWindowName()
       const desktopWindow = await WindowsService.obtainWindow(desktopWindowName)
-      await WindowsService.changeSize(desktopWindow.window.id, 1200, 659)
+      await WindowsService.changeSize(desktopWindow.window.id, 1200, 659, true)
       await WindowsService.changePositionCenter(desktopWindowName)
       // In-Game:
       const inGameWindow = await WindowsService.obtainWindow(WindowNames.IN_GAME)
-      await WindowsService.changeSize(inGameWindow.window.id, 1641, 692)
+      await WindowsService.changeSize(inGameWindow.window.id, 1641, 692, true)
 
       const isGameRunning = await runningGameService.isGameRunning()
 
@@ -78,8 +124,6 @@ define([
         // Game isn't running, display desktop window
         WindowsService.restore(desktopWindowName)
       } else {
-        // Register to game events
-        gepService.registerToGEP(BackgroundController.onGameEvents, BackgroundController.onInfoUpdate)
         // Display in-game window
         await WindowsService.restore(WindowNames.IN_GAME)
         WindowsService.minimize(WindowNames.IN_GAME)
@@ -94,7 +138,7 @@ define([
       const data = { title, message, time }
       const notificationWindow = await WindowsService.obtainWindow(WindowNames.NOTIFICATION)
 
-      await WindowsService.changeSize(WindowNames.NOTIFICATION, 320, 260)
+      await WindowsService.changeSize(WindowNames.NOTIFICATION, 320, 260, true)
       await WindowsService.changePositionCenter(WindowNames.NOTIFICATION)
 
       // Display notification
@@ -156,6 +200,10 @@ define([
     static onInfoUpdate(data) {
       window.ow_eventBus.trigger('info', data)
     }
+
+
+
+    
   }
 
   return BackgroundController

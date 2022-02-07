@@ -275,8 +275,7 @@
         BuildDetailedView,
         buildbyname
       ) {
-        console.log(`[INIT] in-game module loaded`)
-        document.getElementById('BackToDetailedViewButton').onclick = function() {
+          document.getElementById('BackToDetailedViewButton').onclick = function() {
           overwolf.windows.obtainDeclaredWindow('in_game', function(newwindow) {
             console.log(newwindow)
             overwolf.windows.restore('in_game')
@@ -323,8 +322,7 @@
             intervalID = setInterval(() => {
               elapsed++
               $('#currentTime').html(prettyTime(elapsed))
-              calcSelectedRow()
-              console.log(result)
+              calcSelectedRow()       
             }, 1000)
           } else {
             clearInterval(intervalID)
@@ -373,7 +371,6 @@
     if (response7.name === "lockin") {
           if (canClickThroughWindow === false) {
             overwolf.windows.setWindowStyle('BuildLockedIn', 'InputPassThrough', function(status) {
-              console.log(status)
             })
             document.getElementById('removedwhenlockedin1').style.display = 'none'
             document.getElementById('removedwhenlockedin2').style.display = 'none'
@@ -383,16 +380,15 @@
             document.getElementById('backgroundColor').style.border = '0px'
             document.getElementById('backgroundColor').style.opacity = '.85'
             document.body.style.backgroundColor = 'transparent'
-            overwolf.windows.changeSize('BuildLockedIn', 400, 400)
+            overwolf.windows.changeSize({window_id:"BuildLockedIn", width: 400, height: 400, auto_dpi_resize:true})
 
             canClickThroughWindow = true
           } else {
             overwolf.windows.removeWindowStyle('BuildLockedIn', 'InputPassThrough', function(status) {
-              console.log(status)
             })
             document.getElementById('removedwhenlockedin1').style.display = ''
             document.getElementById('removedwhenlockedin2').style.display = 'flex'
-            overwolf.windows.changeSize('BuildLockedIn', 400, 500)
+            overwolf.windows.changeSize({window_id:"BuildLockedIn", width: 400, height: 500, auto_dpi_resize:true})
             document.getElementById('backgroundColor').style.height = '100%'
             document.getElementById('backgroundColor').style.width = '99%'
             document.getElementById('backgroundColor').style.opacity = '1'

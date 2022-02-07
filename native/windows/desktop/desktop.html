@@ -6,30 +6,21 @@
     <link rel="stylesheet" href="../../css/header.css" />
     <link rel="stylesheet" href="../../css/desktop.css" />
     <link rel="stylesheet" href="../../css/modal.css" />
-    <title>Clan AT's Warbuilds</title>
+    <title>Cy's Warbuilds</title>
   </head>
   <body class="desktop">
     <!-- -------------------------------- Header ------------------------------- -->
 
     <header class="app-header">
       <img src="../../img/header_icon.png" />
-      <h1>Clan AT's Warbuilds | Desktop Window</h1>
+      <h1>Cy's Warbuilds | Desktop Window</h1>
       <div class="window-controls-group">
         <button class="icon window-control support">
           <svg>
             <use xlink:href="/img/header_icons.svg#window-control_support" />
           </svg>
           <div class="tooltip">
-            <a href="" id="discordlink">Join our Discord</a><br />
-            <a href="" id="websitelink">Visit our Website</a><br />
             <a href="" id="feedbacklink">Bug Reports + Feedback</a>
-            <hr />
-            <h3>Social Media</h3>
-            <div class="socialIcons">
-              <a href="" id="twittericon"><img src="../../img/twitter.svg"/></a>
-              <a href="" id="facebookicon"><img src="../../img/facebook.svg"/></a>
-              <a href="" id="redditicon"><img src="../../img/reddit.png"/></a>
-            </div>
           </div>
         </button>
         <a class="icon window-control" href="overwolf://settings/hotkeys">
@@ -124,23 +115,8 @@
       })
     </script>
     <script>
-      document.getElementById('twittericon').onclick = function() {
-        overwolf.utils.openUrlInDefaultBrowser('https://twitter.com/theoverwolf')
-      }
-      document.getElementById('facebookicon').onclick = function() {
-        overwolf.utils.openUrlInDefaultBrowser('https://www.facebook.com/Overwolf/')
-      }
-      document.getElementById('redditicon').onclick = function() {
-        overwolf.utils.openUrlInDefaultBrowser('https://www.reddit.com/r/Overwolf/')
-      }
-      document.getElementById('discordlink').onclick = function() {
-        overwolf.utils.openUrlInDefaultBrowser('https://discord.gg/XfwWVzh')
-      }
-      document.getElementById('websitelink').onclick = function() {
-        overwolf.utils.openUrlInDefaultBrowser('http://www.clanat.org/')
-      }
       document.getElementById('feedbacklink').onclick = function() {
-        overwolf.utils.openUrlInDefaultBrowser('https://www.clanat.org/forum/warbuilds-bugs-feedback')
+        overwolf.utils.openUrlInDefaultBrowser('https://github.com/liquid-cy/Warbuilds/issues')
       }
     </script>
    
